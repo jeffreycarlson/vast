@@ -217,7 +217,7 @@
                                           <xs:pattern value="(\d{2}:[0-5]\d:[0-5]\d(\.\d\d\d)?|1?\d?\d(\.?\d)*%)" />
                                         </xs:restriction>
                                       </xs:simpleType>
-                                   </xs:attribute>
+                                    </xs:attribute>
                                   </xs:complexType>
                                 </xs:element>
                                 <xs:element name="CompanionAds" minOccurs="0" maxOccurs="1">
@@ -755,7 +755,7 @@
       </xs:element>
       <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
         <xs:annotation>
-          <xs:documentation>Data to be passed into the video ad. </xs:documentation>
+          <xs:documentation>Data to be passed into the video ad.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -951,7 +951,7 @@
       </xs:annotation>
       <xs:simpleType>
         <xs:restriction base="xs:string">
-          <xs:pattern value='([0-9]*|left|right)' />
+          <xs:pattern value="([0-9]*|left|right)" />
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -961,7 +961,7 @@
       </xs:annotation>
       <xs:simpleType>
         <xs:restriction base="xs:string">
-          <xs:pattern value='([0-9]*|top|bottom)' />
+          <xs:pattern value="([0-9]*|top|bottom)" />
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -981,7 +981,7 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
-  <xs:complexType name ="Extensions_type">
+  <xs:complexType name="Extensions_type">
     <xs:sequence>
       <xs:element name="Extension" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
@@ -996,7 +996,7 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name ="CreativeExtensions_type">
+  <xs:complexType name="CreativeExtensions_type">
     <xs:sequence>
       <xs:element name="CreativeExtension" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
