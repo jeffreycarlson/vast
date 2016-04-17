@@ -49,6 +49,23 @@ def openFile():
         quit()
     return file_name
 
+# Calculate bitrate
+def calculate_bitrate(bitrate):
+    # Convert bitrate to an integer
+    bitrate = int(float(bitrate))
+    # Round bitrate to nearst 1000th
+    bitrate = round(bitrate, -3)
+    # Divide by 1000 to get kbps 
+    # Note that /1000, not /1024, is used for bandwidth bit calculations
+    bitrate = bitrate/1000 
+    return bitrate
+
+# Change seconds into HH:MM:SS format
+def vast_duration_format(secs):
+    mins, secs = divmod(secs, 60)
+    hours, mins = divmod(mins, 60)
+    return '%02d:%02d:%02d' % (hours, mins, secs)
+
 # Select options for reading mp4 files
 try:
     option = int(raw_input('1. Download File\n2. Open File\nSelect an option: '))
@@ -73,7 +90,8 @@ with open(file_name_json) as data_file:
     data = json.load(data_file)
 
 # Video JSON Data
-bitrate = data["streams"][0]["bit_rate"]
+bitrate_video = data["streams"][0]["bit_rate"]
+bitrate_audio = data["streams"][1]["bit_rate"]
 bitrate_overall = data["format"]["bit_rate"]
 duration = data["streams"][0]["duration"]
 width = data["streams"][0]["width"]
@@ -86,32 +104,17 @@ video_level = data["streams"][0]["level"]
 audio_codec = data["streams"][1]["codec_name"]
 audio_profile = data["streams"][1]["profile"]
 
-# Convert bitrate to an integer
-bitrate = int(float(bitrate))
-# Round bitrate to nearst 1000th
-bitrate = round(bitrate, -3)
-# Divide by 1000 to get kbps
-bitrate = bitrate/1000
-
-# Convert bitrate to an integer
-bitrate_overall = int(float(bitrate_overall))
-# Round bitrate to nearst 1000th
-bitrate_overall = round(bitrate_overall, -3)
-# Divide by 1000 to get kbps
-bitrate_overall = bitrate_overall/1000
-
-# Change seconds into HH:MM:SS format
-def vast_duration_format(secs):
-	mins, secs = divmod(secs, 60)
-	hours, mins = divmod(mins, 60)
-	return '%02d:%02d:%02d' % (hours, mins, secs)
+bitrate_video = calculate_bitrate(bitrate_video)
+bitrate_audio = calculate_bitrate(bitrate_audio)
+bitrate_overall = calculate_bitrate(bitrate_overall)
 
 # Format duration
 duration = vast_duration_format(float(duration))
 
 # Print out mp4 information
 print "\n"
-print "Video Bitrate (kbps): %i" % bitrate
+print "Video Bitrate (kbps): %i" % bitrate_video
+print "Audio Bitrate (kbps): %i" % bitrate_audio
 print "Overall Bitrate (kbps): %i" % bitrate_overall
 print "Duration: %s" % duration
 print "Width: %s" % width
