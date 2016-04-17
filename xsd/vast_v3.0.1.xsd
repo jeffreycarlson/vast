@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:element name="VAST">
     <xs:annotation>
-      <xs:documentation>IAB VAST, Video Ad Serving Template, video xml ad response, Version 3.0.0, xml schema prepared by Google</xs:documentation>
+      <xs:documentation>IAB VAST, Video Ad Serving Template, video xml ad response, Version 3.0.1, xml schema prepared by Google</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
