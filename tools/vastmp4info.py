@@ -66,6 +66,12 @@ def vast_duration_format(secs):
     hours, mins = divmod(mins, 60)
     return '%02d:%02d:%02d' % (hours, mins, secs)
 
+# Calculate video size
+def calculate_video_size(video_size):
+    video_size = float(video_size)
+    # Divide by 1000000 to get MB size
+    return video_size / 1000000
+
 # Select options for reading mp4 files
 try:
     option = int(raw_input('1. Download File\n2. Open File\nSelect an option: '))
@@ -99,6 +105,7 @@ height = data["streams"][0]["height"]
 video_codec = data["streams"][0]["codec_name"]
 video_profile = data["streams"][0]["profile"]
 video_level = data["streams"][0]["level"]
+video_size = data["format"]["size"]
 
 # Audio JSON Data
 audio_codec = data["streams"][1]["codec_name"]
@@ -110,6 +117,9 @@ bitrate_overall = calculate_bitrate(bitrate_overall)
 
 # Format duration
 duration = vast_duration_format(float(duration))
+
+# Format video size
+video_size_mb = calculate_video_size(video_size)
 
 # Print out mp4 information
 print "\n"
@@ -124,6 +134,7 @@ print "Video Profile: %s" % video_profile
 print "Video Level: %s" % video_level
 print "Audio Codec: %s" % audio_codec
 print "Audio Profile: %s" % audio_profile
+print "File Size (mb): %.2f" % video_size_mb
 print "\n"
 
 # Cleanup/delete mp4 and json file after process completes
