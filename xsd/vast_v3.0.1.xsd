@@ -89,7 +89,7 @@
                       </xs:annotation>
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="Creative" maxOccurs="unbounded">
+                          <xs:element name="Creative" minOccurs="1" maxOccurs="unbounded">
                             <xs:annotation>
                               <xs:documentation>Wraps each creative element within an InLine or Wrapper Ad</xs:documentation>
                             </xs:annotation>
@@ -302,7 +302,7 @@
                         <xs:documentation>URL to request to track an impression</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Creatives">
+                    <xs:element name="Creatives" minOccurs="0" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="Creative" minOccurs="0" maxOccurs="unbounded">
