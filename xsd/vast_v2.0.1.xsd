@@ -68,7 +68,7 @@
                                           <xs:documentation>Duration in standard time format, hh:mm:ss</xs:documentation>
                                         </xs:annotation>
                                       </xs:element>
-                                      <xs:element name="TrackingEvents" minOccurs="0" type="TrackingEvents_type" maxOccurs="1" />
+                                      <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1" type="TrackingEvents_type" />
                                       <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="xs:string">
                                         <xs:annotation>
                                           <xs:documentation>Data to be passed into the video ad</xs:documentation>
