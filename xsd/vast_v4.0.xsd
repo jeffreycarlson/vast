@@ -38,6 +38,11 @@
                         <xs:documentation>Common name of advertiser</xs:documentation>
                       </xs:annotation>
                     </xs:element>
+                    <xs:element name="Category" minOccurs="0" maxOccurs="unbounded" type="Category_type">
+                      <xs:annotation>
+                        <xs:documentation>Descrition of the ad content</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
                     <xs:element name="Pricing" minOccurs="0" maxOccurs="1">
                       <xs:annotation>
                         <xs:documentation>The price of the ad.</xs:documentation>
@@ -1038,6 +1043,17 @@
         <xs:attribute name="xmlEncoded" type="xs:boolean" use="optional">
           <xs:annotation>
             <xs:documentation>Specifies whether the HTML is XML-encoded</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Category_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="authority" type="xs:anyURI" use="optional">
+          <xs:annotation>
+            <xs:documentation>Organizational authority that produced the category identification list</xs:documentation>
           </xs:annotation>
         </xs:attribute>
       </xs:extension>
