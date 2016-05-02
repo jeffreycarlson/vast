@@ -43,39 +43,10 @@
                         <xs:documentation>Descrition of the ad content</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Pricing" minOccurs="0" maxOccurs="1">
+                    <xs:element name="Pricing" minOccurs="0" maxOccurs="1" type="Pricing_type">
                       <xs:annotation>
                         <xs:documentation>The price of the ad.</xs:documentation>
                       </xs:annotation>
-                      <xs:complexType>
-                        <xs:simpleContent>
-                          <xs:extension base="xs:decimal">
-                            <xs:attribute name="model" use="required">
-                              <xs:annotation>
-                                <xs:documentation>The pricing model used.</xs:documentation>
-                              </xs:annotation>
-                              <xs:simpleType>
-                                <xs:restriction base="xs:NMTOKEN">
-                                  <xs:enumeration value="cpc" />
-                                  <xs:enumeration value="cpm" />
-                                  <xs:enumeration value="cpe" />
-                                  <xs:enumeration value="cpv" />
-                                </xs:restriction>
-                              </xs:simpleType>
-                            </xs:attribute>
-                            <xs:attribute name="currency" use="required">
-                              <xs:annotation>
-                                <xs:documentation>The currency of the pricing.</xs:documentation>
-                              </xs:annotation>
-                              <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                  <xs:pattern value="[a-zA-Z]{3}" />
-                                </xs:restriction>
-                              </xs:simpleType>
-                            </xs:attribute>
-                          </xs:extension>
-                        </xs:simpleContent>
-                      </xs:complexType>
                     </xs:element>
                     <xs:element name="Survey" minOccurs="0" maxOccurs="1" type="xs:anyURI">
                       <xs:annotation>
@@ -295,6 +266,11 @@
                     <xs:element name="VASTAdTagURI" minOccurs="1" maxOccurs="1" type="xs:anyURI">
                       <xs:annotation>
                         <xs:documentation>URL of ad tag of downstream Secondary Ad Server</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Pricing" minOccurs="0" maxOccurs="1" type="Pricing_type">
+                      <xs:annotation>
+                        <xs:documentation>The price of the ad.</xs:documentation>
                       </xs:annotation>
                     </xs:element>
                     <xs:element name="Error" minOccurs="0" maxOccurs="1" type="xs:anyURI">
@@ -1055,6 +1031,35 @@
           <xs:annotation>
             <xs:documentation>Organizational authority that produced the category identification list</xs:documentation>
           </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Pricing_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="model" use="required">
+          <xs:annotation>
+            <xs:documentation>The pricing model used.</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:NMTOKEN">
+              <xs:enumeration value="cpc" />
+              <xs:enumeration value="cpm" />
+              <xs:enumeration value="cpe" />
+              <xs:enumeration value="cpv" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="currency" use="required">
+          <xs:annotation>
+            <xs:documentation>The currency of the pricing.</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[a-zA-Z]{3}" />
+            </xs:restriction>
+          </xs:simpleType>
         </xs:attribute>
       </xs:extension>
     </xs:simpleContent>
