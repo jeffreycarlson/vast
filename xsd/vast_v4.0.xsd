@@ -70,13 +70,13 @@
                     </xs:element>
                     <xs:element name="AdVerifications" minOccurs="0" maxOccurs="1">
                       <xs:annotation>
-                        <xs:documentation>Contains all verification elements used to collect playback data</xs:documentation>
+                        <xs:documentation>Contains verification elements used to collect playback data</xs:documentation>
                       </xs:annotation>
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="Verification" minOccurs="0" maxOccurs="unbounded" type="Verification_type">
                             <xs:annotation>
-                              <xs:documentation>Contains JavaScript or Flash code used to collect playback data</xs:documentation>
+                              <xs:documentation>Contains verification code and URL trackers used to collect playback data</xs:documentation>
                             </xs:annotation>
                           </xs:element>
                         </xs:sequence>
@@ -313,13 +313,13 @@
                     </xs:element>
                     <xs:element name="AdVerifications" minOccurs="0" maxOccurs="1">
                       <xs:annotation>
-                        <xs:documentation>Contains all verification elements used to collect playback data</xs:documentation>
+                        <xs:documentation>Contains verification elements used to collect playback data</xs:documentation>
                       </xs:annotation>
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="Verification" minOccurs="0" maxOccurs="unbounded" type="VerificationWrapper_type">
                             <xs:annotation>
-                              <xs:documentation>Contains JavaScript or Flash code used to collect playback data</xs:documentation>
+                              <xs:documentation>Contains verification URL trackers used to collect playback data</xs:documentation>
                             </xs:annotation>
                           </xs:element>
                         </xs:sequence>
