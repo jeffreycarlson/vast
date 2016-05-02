@@ -68,6 +68,20 @@
                         <xs:documentation>Contains all viewability impression trackers</xs:documentation>
                       </xs:annotation>
                     </xs:element>
+                    <xs:element name="AdVerifications" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Contains all verification elements used to collect playback data</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Verification" minOccurs="0" maxOccurs="unbounded" type="Verification_type">
+                            <xs:annotation>
+                              <xs:documentation>Contains JavaScript or Flash code used to collect playback data</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                     <xs:element name="Creatives" minOccurs="1" maxOccurs="1">
                       <xs:annotation>
                         <xs:documentation>Contains all creative elements within an InLine or Wrapper Ad</xs:documentation>
@@ -296,6 +310,20 @@
                       <xs:annotation>
                         <xs:documentation>Contains all viewability impression trackers</xs:documentation>
                       </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AdVerifications" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Contains all verification elements used to collect playback data</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Verification" minOccurs="0" maxOccurs="unbounded" type="VerificationWrapper_type">
+                            <xs:annotation>
+                              <xs:documentation>Contains JavaScript or Flash code used to collect playback data</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
                     </xs:element>
                     <xs:element name="Creatives" minOccurs="0" maxOccurs="1">
                       <xs:complexType>
@@ -1099,6 +1127,88 @@
     <xs:attribute name="id" type="xs:string" use="optional">
       <xs:annotation>
         <xs:documentation>Optional identifier</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="Verification_type">
+    <xs:sequence>
+      <xs:element name="JavaScriptResource" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>A URL to the JavaScript used to collect verification data</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="APIFramework" type="xs:string" use="optional">
+                <xs:annotation>
+                  <xs:documentation>The name of the API Framework used to execute the verification code</xs:documentation>
+                </xs:annotation>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FlashResource" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>A URL to the Flash file used to collect verification data</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="APIFramework" type="xs:string" use="optional">
+                <xs:annotation>
+                  <xs:documentation>The name of the API Framework used to execute the verification code</xs:documentation>
+                </xs:annotation>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ViewableImpression" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>A URL provided by verification vendor for tracking viewable impressions</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="id" type="xs:string" use="optional">
+                <xs:annotation>
+                  <xs:documentation>Optional identifier</xs:documentation>
+                </xs:annotation>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="vendor" type="xs:anyURI" use="optional">
+      <xs:annotation>
+        <xs:documentation>The home page URL of the verification service provider</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="VerificationWrapper_type">
+    <xs:sequence>
+      <xs:element name="ViewableImpression" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>A URL provided by verification vendor for tracking viewable impressions</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="id" type="xs:string" use="optional">
+                <xs:annotation>
+                  <xs:documentation>Optional identifier</xs:documentation>
+                </xs:annotation>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="vendor" type="xs:anyURI" use="optional">
+      <xs:annotation>
+        <xs:documentation>The home page URL of the verification service provider</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
