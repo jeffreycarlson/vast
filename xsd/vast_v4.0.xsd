@@ -63,6 +63,11 @@
                         <xs:documentation>URL to request to track an impression</xs:documentation>
                       </xs:annotation>
                     </xs:element>
+                    <xs:element name="ViewableImpression" minOccurs="0" maxOccurs="1" type="ViewableImpression_type">
+                      <xs:annotation>
+                        <xs:documentation>Contains all viewability impression trackers</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
                     <xs:element name="Creatives" minOccurs="1" maxOccurs="1">
                       <xs:annotation>
                         <xs:documentation>Contains all creative elements within an InLine or Wrapper Ad</xs:documentation>
@@ -285,6 +290,11 @@
                     <xs:element name="Impression" minOccurs="1" maxOccurs="unbounded" type="Impression_type">
                       <xs:annotation>
                         <xs:documentation>URL to request to track an impression</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ViewableImpression" minOccurs="0" maxOccurs="1" type="ViewableImpression_type">
+                      <xs:annotation>
+                        <xs:documentation>Contains all viewability impression trackers</xs:documentation>
                       </xs:annotation>
                     </xs:element>
                     <xs:element name="Creatives" minOccurs="0" maxOccurs="1">
@@ -1067,5 +1077,29 @@
         </xs:attribute>
       </xs:extension>
     </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ViewableImpression_type">
+    <xs:sequence>
+      <xs:element name="Viewable" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
+        <xs:annotation>
+          <xs:documentation>URL to request when ad viewablity criteria is met</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="NotViewable" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
+        <xs:annotation>
+          <xs:documentation>URL to request when ad viewablity criteria is not met</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ViewUndetermined" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
+        <xs:annotation>
+          <xs:documentation>URL to request when ad viewablilty criteria is undetermined</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>Optional identifier</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
   </xs:complexType>
 </xs:schema>
