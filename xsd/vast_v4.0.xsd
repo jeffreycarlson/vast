@@ -58,7 +58,11 @@
                         <xs:documentation>URL to request if ad does not play due to error</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Impression" minOccurs="1" maxOccurs="unbounded" type="Impression_type" />
+                    <xs:element name="Impression" minOccurs="1" maxOccurs="unbounded" type="Impression_type">
+                      <xs:annotation>
+                        <xs:documentation>URL to request to track an impression</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
                     <xs:element name="Creatives" minOccurs="1" maxOccurs="1">
                       <xs:annotation>
                         <xs:documentation>Contains all creative elements within an InLine or Wrapper Ad</xs:documentation>
@@ -278,7 +282,7 @@
                         <xs:documentation>URL to request if ad does not play due to error</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Impression" minOccurs="1" maxOccurs="unbounded" type="xs:anyURI">
+                    <xs:element name="Impression" minOccurs="1" maxOccurs="unbounded" type="Impression_type">
                       <xs:annotation>
                         <xs:documentation>URL to request to track an impression</xs:documentation>
                       </xs:annotation>
