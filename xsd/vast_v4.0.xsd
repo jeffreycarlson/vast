@@ -5,7 +5,7 @@
       <xs:documentation>IAB VAST, Video Ad Serving Template, video xml ad response, Version 4.0.0, xml schema prepared by Twitter</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:sequence>
+      <xs:choice>
         <xs:element name="Ad" minOccurs="0" maxOccurs="unbounded">
           <xs:annotation>
             <xs:documentation>Top-level element, wraps each ad in the response</xs:documentation>
@@ -455,7 +455,7 @@
             <xs:documentation>URL to request if ad does not play due to error</xs:documentation>
           </xs:annotation>
         </xs:element>
-      </xs:sequence>
+      </xs:choice>
       <xs:attribute name="version" type="xs:string" use="required">
         <xs:annotation>
           <xs:documentation>Current version is 4.0.</xs:documentation>
