@@ -1045,6 +1045,11 @@
   </xs:complexType>
   <xs:complexType name="CreativeComponents_type">
     <xs:sequence>
+      <xs:element name="UniversalAdId" minOccurs="1" maxOccurs="1" type="UniversalAdId_type">
+        <xs:annotation>
+          <xs:documentation>A unique creative identifier</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="CreativeExtensions"  minOccurs="0" maxOccurs="unbounded" type="CreativeExtensions_type">
         <xs:annotation>
           <xs:documentation>Contains any number of creative extensions</xs:documentation>
@@ -1246,6 +1251,22 @@
         <xs:attribute name="apiFramework" type="xs:string" use="optional">
           <xs:annotation>
             <xs:documentation>Identifies the API needed to execute the Icon resource file if applicable</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UniversalAdId_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="idRegistry" type="xs:string" use="required">
+          <xs:annotation>
+            <xs:documentation>Identifies the URL for the registry website when the unique creative ID is cateloged. Default value is "unknown"</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="idValue" type="xs:string" use="required">
+          <xs:annotation>
+            <xs:documentation>The unique creative ID. Default value is "unknown"</xs:documentation>
           </xs:annotation>
         </xs:attribute>
       </xs:extension>
