@@ -108,6 +108,11 @@
                                           </xs:sequence>
                                         </xs:complexType>
                                       </xs:element>
+                                      <xs:element name="InteractiveCreativeFile" minOccurs="0" maxOccurs="1" type="InteractiveCreativeFile_type">
+                                        <xs:annotation>
+                                          <xs:documentation>URI to a file that provides creative functions for the media file</xs:documentation>
+                                        </xs:annotation>
+                                      </xs:element>
                                       <xs:element name="CreativeExtensions" minOccurs="0" maxOccurs="1" type="CreativeExtensions_type" />
                                       <xs:element name="Duration" minOccurs="1" maxOccurs="1" type="xs:time">
                                         <xs:annotation>
@@ -350,6 +355,11 @@
                                             </xs:element>
                                           </xs:sequence>
                                         </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="InteractiveCreativeFile" minOccurs="0" maxOccurs="1" type="InteractiveCreativeFile_type">
+                                        <xs:annotation>
+                                          <xs:documentation>URI to a file that provides creative functions for the media file</xs:documentation>
+                                        </xs:annotation>
                                       </xs:element>
                                       <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1" type="TrackingEvents_type" />
                                       <xs:element name="VideoClicks" minOccurs="0" maxOccurs="1">
@@ -1216,5 +1226,21 @@
         <xs:documentation>The home page URL of the verification service provider</xs:documentation>
       </xs:annotation>
     </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="InteractiveCreativeFile_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="type" type="xs:string" use="optional">
+          <xs:annotation>
+            <xs:documentation>Identifies the MIME type of the file provided</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="apiFramework" type="xs:string" use="optional">
+          <xs:annotation>
+            <xs:documentation>Identifies the API needed to execute the Icon resource file if applicable</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
   </xs:complexType>
 </xs:schema>
