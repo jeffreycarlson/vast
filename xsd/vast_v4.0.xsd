@@ -854,7 +854,6 @@
   </xs:complexType>
   <xs:complexType name="NonLinearWrapper_type">
     <xs:sequence>
-      <xs:element name="CreativeExtensions" minOccurs="0" maxOccurs="1" type="CreativeExtensions_type" />
       <xs:element name="NonLinearClickTracking" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
         <xs:annotation>
           <xs:documentation>URLs to ping when user clicks on the the non-linear ad unit.</xs:documentation>
