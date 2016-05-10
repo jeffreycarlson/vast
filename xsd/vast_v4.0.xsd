@@ -48,7 +48,7 @@
                         <xs:documentation>The price of the ad.</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Survey" minOccurs="0" maxOccurs="1" type="xs:anyURI">
+                    <xs:element name="Survey" minOccurs="0" maxOccurs="1" type="Survey_type">
                       <xs:annotation>
                         <xs:documentation>URL of request to survey vendor</xs:documentation>
                       </xs:annotation>
@@ -282,9 +282,14 @@
                                   <xs:documentation>The preferred order in which multiple Creatives should be displayed</xs:documentation>
                                 </xs:annotation>
                               </xs:attribute>
-                              <xs:attribute name="AdID" type="xs:string" use="optional">
+                              <xs:attribute name="adId" type="xs:string" use="optional">
                                 <xs:annotation>
                                   <xs:documentation>Ad-ID for the creative (formerly ISCI)</xs:documentation>
+                                </xs:annotation>
+                              </xs:attribute>
+                              <xs:attribute name="apiFramework" type="xs:string" use="optional">
+                                <xs:annotation>
+                                  <xs:documentation>A string that identifies an API that is needed to execute the creative</xs:documentation>
                                 </xs:annotation>
                               </xs:attribute>
                             </xs:complexType>
@@ -435,7 +440,7 @@
                                   <xs:documentation>The preferred order in which multiple Creatives should be displayed</xs:documentation>
                                 </xs:annotation>
                               </xs:attribute>
-                              <xs:attribute name="AdID" type="xs:string" use="optional">
+                              <xs:attribute name="adId" type="xs:string" use="optional">
                                 <xs:annotation>
                                   <xs:documentation>Ad-ID for the creative (formerly ISCI)</xs:documentation>
                                 </xs:annotation>
@@ -447,6 +452,21 @@
                     </xs:element>
                     <xs:element name="Extensions" minOccurs="0" maxOccurs="1" type="Extensions_type" />
                   </xs:sequence>
+                  <xs:attribute name="followAdditionalWrappers" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Identifies whether subsequent wrappers after a requested VAST response is allowed</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="allowMultipleAds" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Identifies whether multiple ads are allowed in the requested VAST response</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="fallbackOnNoAd" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Provides instruction for using an available Ad when the requested VAST response returns no ads</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
                 </xs:complexType>
               </xs:element>
             </xs:choice>
@@ -454,6 +474,11 @@
             <xs:attribute name="sequence" type="xs:integer" use="optional">
               <xs:annotation>
                 <xs:documentation>Identifies the sequence of multiple Ads and defines an Ad Pod.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="conditionalAd" type="xs:boolean" use="optional">
+              <xs:annotation>
+                <xs:documentation>Identifies a conditional ad</xs:documentation>
               </xs:annotation>
             </xs:attribute>
           </xs:complexType>
@@ -604,10 +629,21 @@
           <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
+      <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
           <xs:documentation>URLs to ping when user clicks on the the companion banner ad.</xs:documentation>
         </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="id" type="xs:string" use="optional">
+                <xs:annotation>
+                  <xs:documentation>Optional identifier</xs:documentation>
+                </xs:annotation>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
       </xs:element>
       <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string">
         <xs:annotation>
@@ -664,6 +700,16 @@
       <xs:annotation>
         <xs:documentation>Used to match companion creative to publisher placement areas on the page.</xs:documentation>
       </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="pxratio" use="optional">
+      <xs:annotation>
+        <xs:documentation>The pixel ratio of the creative</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:decimal">
+          <xs:fractionDigits value="2" />
+        </xs:restriction>
+      </xs:simpleType>
     </xs:attribute>
   </xs:complexType>
   <xs:complexType name="CompanionWrapper_type">
@@ -706,10 +752,21 @@
           <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
+      <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
           <xs:documentation>URLs to ping when user clicks on the the companion banner ad.</xs:documentation>
         </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="id" type="xs:string" use="optional">
+                <xs:annotation>
+                  <xs:documentation>Optional identifier</xs:documentation>
+                </xs:annotation>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
       </xs:element>
       <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string">
         <xs:annotation>
@@ -766,6 +823,16 @@
       <xs:annotation>
         <xs:documentation>Used to match companion creative to publisher placement areas on the page.</xs:documentation>
       </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="pxratio" use="optional">
+      <xs:annotation>
+        <xs:documentation>The pixel ratio of the creative</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:decimal">
+          <xs:fractionDigits value="2" />
+        </xs:restriction>
+      </xs:simpleType>
     </xs:attribute>
   </xs:complexType>
   <xs:complexType name="NonLinear_type">
@@ -925,6 +992,17 @@
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
+  <xs:complexType name="Survey_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="type" type="xs:string" use="optional">
+          <xs:annotation>
+            <xs:documentation>Identifies the MIME type of the resource provided</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
   <xs:complexType name="Impression_type">
     <xs:simpleContent>
       <xs:extension base="xs:anyURI">
@@ -965,10 +1043,21 @@
       <xs:element name="IconClicks" minOccurs="0" maxOccurs="1">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="IconClickTracking" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
+            <xs:element name="IconClickTracking" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:documentation>URLs to ping when user clicks on the the icon.</xs:documentation>
               </xs:annotation>
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:anyURI">
+                    <xs:attribute name="id" type="xs:string" use="optional">
+                      <xs:annotation>
+                        <xs:documentation>Optional identifier</xs:documentation>
+                      </xs:annotation>
+                    </xs:attribute>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
             </xs:element>
             <xs:element name="IconClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI">
               <xs:annotation>
@@ -1034,6 +1123,16 @@
         <xs:documentation>The apiFramework defines the method to use for communication with the icon element</xs:documentation>
       </xs:annotation>
     </xs:attribute>
+    <xs:attribute name="pxratio" use="optional">
+      <xs:annotation>
+        <xs:documentation>The pixel ratio of the creative</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:decimal">
+          <xs:fractionDigits value="2" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
   </xs:complexType>
   <xs:complexType name="Extensions_type">
     <xs:sequence>
@@ -1045,7 +1144,11 @@
           <xs:sequence>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##any" />
           </xs:sequence>
-          <xs:anyAttribute namespace="##any" processContents="lax" />
+          <xs:attribute name="type" type="xs:string" use="optional">
+            <xs:annotation>
+              <xs:documentation>The MIME type of any code that might be included in the extension</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
         </xs:complexType>
       </xs:element>
     </xs:sequence>
@@ -1060,7 +1163,11 @@
           <xs:sequence>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##any" />
           </xs:sequence>
-          <xs:anyAttribute namespace="##any" processContents="lax" />
+          <xs:attribute name="type" type="xs:string" use="optional">
+            <xs:annotation>
+              <xs:documentation>The MIME type of any code that might be included in the extension</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
         </xs:complexType>
       </xs:element>
     </xs:sequence>
@@ -1160,7 +1267,7 @@
         <xs:complexType>
           <xs:simpleContent>
             <xs:extension base="xs:anyURI">
-              <xs:attribute name="APIFramework" type="xs:string" use="optional">
+              <xs:attribute name="apiFramework" type="xs:string" use="optional">
                 <xs:annotation>
                   <xs:documentation>The name of the API Framework used to execute the verification code</xs:documentation>
                 </xs:annotation>
@@ -1176,7 +1283,7 @@
         <xs:complexType>
           <xs:simpleContent>
             <xs:extension base="xs:anyURI">
-              <xs:attribute name="APIFramework" type="xs:string" use="optional">
+              <xs:attribute name="apiFramework" type="xs:string" use="optional">
                 <xs:annotation>
                   <xs:documentation>The name of the API Framework used to execute the verification code</xs:documentation>
                 </xs:annotation>
@@ -1238,7 +1345,7 @@
       <xs:extension base="xs:anyURI">
         <xs:attribute name="type" type="xs:string" use="optional">
           <xs:annotation>
-            <xs:documentation>Identifies the MIME type of the file provided</xs:documentation>
+            <xs:documentation>Identifies the MIME type of the resource provided</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="apiFramework" type="xs:string" use="optional">
