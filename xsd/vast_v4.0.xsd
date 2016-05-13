@@ -563,16 +563,6 @@
           </xs:annotation>
         </xs:element>
       </xs:choice>
-      <xs:element name="CompanionClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI">
-        <xs:annotation>
-          <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type">
-        <xs:annotation>
-          <xs:documentation>URLs to ping when user clicks on the the companion banner ad</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
         <xs:annotation>
           <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication</xs:documentation>
@@ -581,6 +571,16 @@
       <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string">
         <xs:annotation>
           <xs:documentation>Alt text to be displayed when companion is rendered in HTML environment</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CompanionClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI">
+        <xs:annotation>
+          <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type">
+        <xs:annotation>
+          <xs:documentation>URLs to ping when user clicks on the the companion banner ad</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1" type="TrackingEventsCompanion_type">
@@ -664,16 +664,6 @@
           </xs:annotation>
         </xs:element>
       </xs:choice>
-      <xs:element name="CompanionClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI">
-        <xs:annotation>
-          <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type">
-        <xs:annotation>
-          <xs:documentation>URLs to ping when user clicks on the the companion banner ad</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
         <xs:annotation>
           <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication (e.g. “FlashVar”)</xs:documentation>
@@ -682,6 +672,16 @@
       <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string">
         <xs:annotation>
           <xs:documentation>Alt text to be displayed when companion is rendered in HTML environment</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CompanionClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI">
+        <xs:annotation>
+          <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type">
+        <xs:annotation>
+          <xs:documentation>URLs to ping when user clicks on the the companion banner ad</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1" type="TrackingEventsCompanion_type">
@@ -1030,6 +1030,11 @@
           </xs:annotation>
         </xs:element>
       </xs:choice>
+      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
+        <xs:annotation>
+          <xs:documentation>Data to be passed into the video ad</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="NonLinearClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI">
         <xs:annotation>
           <xs:documentation>URL to open as destination page when user clicks on the non-linear ad unit</xs:documentation>
@@ -1038,11 +1043,6 @@
       <xs:element name="NonLinearClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type">
         <xs:annotation>
           <xs:documentation>URLs to ping when user clicks on the the non-linear ad</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
-        <xs:annotation>
-          <xs:documentation>Data to be passed into the video ad</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
