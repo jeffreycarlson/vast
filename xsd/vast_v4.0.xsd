@@ -101,7 +101,7 @@
                                       <xs:documentation>Video-formatted ads and related elements</xs:documentation>
                                     </xs:annotation>
                                     <xs:complexType>
-                                      <xs:all>
+                                      <xs:sequence>
                                         <xs:element name="Duration" minOccurs="1" maxOccurs="1" type="xs:time">
                                           <xs:annotation>
                                             <xs:documentation>Duration in standard time format, hh:mm:ss</xs:documentation>
@@ -137,7 +137,7 @@
                                             <xs:documentation>URI to a file that provides creative functions for the media file</xs:documentation>
                                           </xs:annotation>
                                         </xs:element>
-                                      </xs:all>
+                                      </xs:sequence>
                                       <xs:attribute name="skipoffset" use="optional">
                                         <xs:annotation>
                                           <xs:documentation>The time at which the ad becomes skippable, if absent, the ad is not skippable</xs:documentation>
@@ -563,11 +563,6 @@
           </xs:annotation>
         </xs:element>
       </xs:choice>
-      <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1" type="TrackingEventsCompanion_type">
-        <xs:annotation>
-          <xs:documentation>The creativeView should always be requested when present. For Companions creativeView is the only supported event</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="CompanionClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI">
         <xs:annotation>
           <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad</xs:documentation>
@@ -578,14 +573,19 @@
           <xs:documentation>URLs to ping when user clicks on the the companion banner ad</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
+        <xs:annotation>
+          <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string">
         <xs:annotation>
           <xs:documentation>Alt text to be displayed when companion is rendered in HTML environment</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
+      <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1" type="TrackingEventsCompanion_type">
         <xs:annotation>
-          <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication</xs:documentation>
+          <xs:documentation>The creativeView should always be requested when present. For Companions creativeView is the only supported event</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -664,11 +664,6 @@
           </xs:annotation>
         </xs:element>
       </xs:choice>
-      <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1" type="TrackingEventsCompanion_type">
-        <xs:annotation>
-          <xs:documentation>The creativeView should always be requested when present. For Companions creativeView is the only supported event</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="CompanionClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI">
         <xs:annotation>
           <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad</xs:documentation>
@@ -679,14 +674,19 @@
           <xs:documentation>URLs to ping when user clicks on the the companion banner ad</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
+        <xs:annotation>
+          <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication (e.g. “FlashVar”)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string">
         <xs:annotation>
           <xs:documentation>Alt text to be displayed when companion is rendered in HTML environment</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
+      <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1" type="TrackingEventsCompanion_type">
         <xs:annotation>
-          <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication (e.g. “FlashVar”)</xs:documentation>
+          <xs:documentation>The creativeView should always be requested when present. For Companions creativeView is the only supported event</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
