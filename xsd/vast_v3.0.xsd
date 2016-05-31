@@ -981,7 +981,9 @@
                     <xs:enumeration value="expand" />
                     <xs:enumeration value="collapse" />
                     <xs:enumeration value="acceptInvitation" />
+                    <xs:enumeration value="acceptInvitationLinear" />
                     <xs:enumeration value="close" />
+                    <xs:enumeration value="closeLinear" />
                     <xs:enumeration value="skip" />
                     <xs:enumeration value="progress" />
                   </xs:restriction>
