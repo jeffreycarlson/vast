@@ -95,21 +95,33 @@ subprocess.call('ffprobe -v quiet -print_format json -show_streams -show_format 
 with open(file_name_json) as data_file:    
     data = json.load(data_file)
 
+codec_type = data["streams"][0]["codec_type"]
+
+if codec_type == 'video':
+    video_stream = 0
+    audio_stream = 1
+elif codec_type == 'audio':
+    video_stream = 1
+    audio_stream = 0
+else:
+    print "Error parsing video metadata!"
+    quit()
+
 # Video JSON Data
-bitrate_video = data["streams"][0]["bit_rate"]
-bitrate_audio = data["streams"][1]["bit_rate"]
+bitrate_video = data["streams"][video_stream]["bit_rate"]
+bitrate_audio = data["streams"][audio_stream]["bit_rate"]
 bitrate_overall = data["format"]["bit_rate"]
-duration = data["streams"][0]["duration"]
-width = data["streams"][0]["width"]
-height = data["streams"][0]["height"]
-video_codec = data["streams"][0]["codec_name"]
-video_profile = data["streams"][0]["profile"]
-video_level = data["streams"][0]["level"]
+duration = data["streams"][video_stream]["duration"]
+width = data["streams"][video_stream]["width"]
+height = data["streams"][video_stream]["height"]
+video_codec = data["streams"][video_stream]["codec_name"]
+video_profile = data["streams"][video_stream]["profile"]
+video_level = data["streams"][video_stream]["level"]
 video_size = data["format"]["size"]
 
 # Audio JSON Data
-audio_codec = data["streams"][1]["codec_name"]
-audio_profile = data["streams"][1]["profile"]
+audio_codec = data["streams"][audio_stream]["codec_name"]
+audio_profile = data["streams"][audio_stream]["profile"]
 
 bitrate_video = calculate_bitrate(bitrate_video)
 bitrate_audio = calculate_bitrate(bitrate_audio)
