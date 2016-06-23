@@ -126,7 +126,7 @@ print "\n"
 #print "File Size (mb): %.2f" % video_size_mb
 print "VAST MediaFile:\n"
 # Print video/mp4
-print "<MediaFile delivery=\"progressive\" type=\"video/mp4\" bitrate=\"%i\" width=\"%s\" height=\"%s\">\n\t<![CDATA[%s]]>\n</MediaFile>" % (bitrate_video, width, height, url)
+print "<MediaFile delivery=\"progressive\" type=\"video/mp4\" bitrate=\"%i\" width=\"%s\" height=\"%s\" scalable=\"true\" maintainAspectRatio=\"true\">\n\t<![CDATA[%s]]>\n</MediaFile>" % (bitrate_video, width, height, url)
 print "\n"
 
 # Cleanup/delete mp4 and json file after process completes
