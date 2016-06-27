@@ -776,7 +776,7 @@
   </xs:complexType>
   <xs:complexType name="HTMLResource_type">
     <xs:simpleContent>
-      <xs:extension base="xs:string">
+      <xs:extension base="xs:anyURI">
         <xs:attribute name="xmlEncoded" type="xs:boolean" use="optional">
           <xs:annotation>
             <xs:documentation>Specifies whether the HTML is XML-encoded</xs:documentation>
