@@ -53,7 +53,7 @@
                         <xs:documentation>URL of request to survey vendor</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Error" minOccurs="0" maxOccurs="1" type="xs:anyURI">
+                    <xs:element name="Error" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
                       <xs:annotation>
                         <xs:documentation>URL to request if ad does not play due to error</xs:documentation>
                       </xs:annotation>
@@ -122,7 +122,7 @@
                                             <xs:documentation>Contains all linear video click elements</xs:documentation>
                                           </xs:annotation>
                                         </xs:element>
-                                        <xs:element name="MediaFiles" minOccurs="0" maxOccurs="1" type="MediaFiles_type">
+                                        <xs:element name="MediaFiles" minOccurs="1" maxOccurs="1" type="MediaFiles_type">
                                           <xs:annotation>
                                             <xs:documentation>Contains any number of linear files</xs:documentation>
                                           </xs:annotation>
@@ -130,11 +130,6 @@
                                         <xs:element name="Icons" minOccurs="0" maxOccurs="1" type="Icons_type">
                                           <xs:annotation>
                                             <xs:documentation>Contains all icon elements</xs:documentation>
-                                          </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="InteractiveCreativeFile" minOccurs="0" maxOccurs="1" type="InteractiveCreativeFile_type">
-                                          <xs:annotation>
-                                            <xs:documentation>URI to a file that provides creative functions for the media file</xs:documentation>
                                           </xs:annotation>
                                         </xs:element>
                                       </xs:sequence>
@@ -156,7 +151,7 @@
                                     </xs:annotation>
                                     <xs:complexType>
                                       <xs:sequence>
-                                        <xs:element name="Companion" minOccurs="0" maxOccurs="unbounded" type="Companion_type">
+                                        <xs:element name="Companion" minOccurs="1" maxOccurs="unbounded" type="Companion_type">
                                           <xs:annotation>
                                             <xs:documentation>Any number of companions in any desired pixel dimensions</xs:documentation>
                                           </xs:annotation>
@@ -251,7 +246,7 @@
                         <xs:documentation>The price of the ad</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Error" minOccurs="0" maxOccurs="1" type="xs:anyURI">
+                    <xs:element name="Error" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
                       <xs:annotation>
                         <xs:documentation>URL to request if ad does not play due to error</xs:documentation>
                       </xs:annotation>
@@ -304,11 +299,6 @@
                                           <xs:documentation>Contains all icon related elements</xs:documentation>
                                         </xs:annotation>
                                       </xs:element>
-                                      <xs:element name="InteractiveCreativeFile" minOccurs="0" maxOccurs="1" type="InteractiveCreativeFile_type">
-                                        <xs:annotation>
-                                          <xs:documentation>URI to a file that provides creative functions for the media file</xs:documentation>
-                                        </xs:annotation>
-                                      </xs:element>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
@@ -318,7 +308,7 @@
                                   </xs:annotation>
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element name="Companion" minOccurs="0" maxOccurs="unbounded" type="CompanionWrapper_type">
+                                      <xs:element name="Companion" minOccurs="1" maxOccurs="unbounded" type="CompanionWrapper_type">
                                         <xs:annotation>
                                           <xs:documentation>Definition of Companion ad, if served separately</xs:documentation>
                                         </xs:annotation>
@@ -332,7 +322,7 @@
                                   </xs:annotation>
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element name="NonLinear" minOccurs="0" maxOccurs="unbounded" type="NonLinearWrapper_type">
+                                      <xs:element name="NonLinear" minOccurs="1" maxOccurs="unbounded" type="NonLinearWrapper_type">
                                         <xs:annotation>
                                           <xs:documentation>Any number of companions in any desired pixel dimensions</xs:documentation>
                                         </xs:annotation>
@@ -407,7 +397,7 @@
             </xs:attribute>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Error" minOccurs="0" maxOccurs="1" type="xs:anyURI">
+        <xs:element name="Error" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
           <xs:annotation>
             <xs:documentation>URL to request if ad does not play due to error</xs:documentation>
           </xs:annotation>
@@ -1008,6 +998,11 @@
             </xs:extension>
           </xs:simpleContent>
         </xs:complexType>
+      </xs:element>
+      <xs:element name="InteractiveCreativeFile" minOccurs="0" maxOccurs="unbounded" type="InteractiveCreativeFile_type">
+        <xs:annotation>
+          <xs:documentation>URI to a file that provides creative functions for the media file</xs:documentation>
+        </xs:annotation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
