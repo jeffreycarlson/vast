@@ -656,7 +656,7 @@
       </xs:choice>
       <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
         <xs:annotation>
-          <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication (e.g. “FlashVar”)</xs:documentation>
+          <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication (e.g. 'FlashVar')</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string">
@@ -947,7 +947,7 @@
               </xs:attribute>
               <xs:attribute name="type" type="xs:string" use="required">
                 <xs:annotation>
-                  <xs:documentation>MIME type. Popular MIME types include, but are not limited to “video/x-ms-wmv” for Windows Media, and “video/x-flv” for Flash Video. Image ads or interactive ads can be included in the MediaFiles section with appropriate MIME types</xs:documentation>
+                  <xs:documentation>MIME type. Popular MIME types include, but are not limited to 'video/x-ms-wmv' for Windows Media, and 'video/x-flv' for Flash Video. Image ads or interactive ads can be included in the MediaFiles section with appropriate MIME types</xs:documentation>
                 </xs:annotation>
               </xs:attribute>
               <xs:attribute name="bitrate" type="xs:integer" use="optional">
