@@ -77,7 +77,7 @@
                         <xs:documentation>URL of request to survey vendor</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Error" minOccurs="0" maxOccurs="1" type="xs:anyURI">
+                    <xs:element name="Error" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI">
                       <xs:annotation>
                         <xs:documentation>URL to request if ad does not play due to error</xs:documentation>
                       </xs:annotation>
