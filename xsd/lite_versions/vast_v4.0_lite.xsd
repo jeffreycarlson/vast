@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="VAST">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="Ad" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:choice minOccurs="1" maxOccurs="1">
+              <xs:element name="InLine" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdSystem" minOccurs="1" maxOccurs="1" type="AdSystem_type" />
+                    <xs:element name="AdTitle" minOccurs="1" maxOccurs="1" type="xs:string" />
+                    <xs:element name="Description" minOccurs="0" maxOccurs="1" type="xs:string" />
+                    <xs:element name="Advertiser" minOccurs="0" maxOccurs="1" type="xs:string" />
+                    <xs:element name="Category" minOccurs="0" maxOccurs="unbounded" type="Category_type" />
+                    <xs:element name="Pricing" minOccurs="0" maxOccurs="1" type="Pricing_type" />
+                    <xs:element name="Survey" minOccurs="0" maxOccurs="1" type="Survey_type" />
+                    <xs:element name="Error" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                    <xs:element name="Impression" minOccurs="1" maxOccurs="unbounded" type="AnyURI_type" />
+                    <xs:element name="ViewableImpression" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Viewable" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                          <xs:element name="NotViewable" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                          <xs:element name="ViewUndetermined" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AdVerifications" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Verification" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:choice>
+                                  <xs:element name="JavaScriptResource" minOccurs="0" maxOccurs="1">
+                                    <xs:complexType>
+                                      <xs:simpleContent>
+                                        <xs:extension base="xs:anyURI">
+                                          <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                                        </xs:extension>
+                                      </xs:simpleContent>
+                                    </xs:complexType>
+                                  </xs:element>
+                                  <xs:element name="FlashResource" minOccurs="0" maxOccurs="1">
+                                    <xs:complexType>
+                                      <xs:simpleContent>
+                                        <xs:extension base="xs:anyURI">
+                                          <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                                        </xs:extension>
+                                      </xs:simpleContent>
+                                    </xs:complexType>
+                                  </xs:element>
+                                </xs:choice>
+                                <xs:element name="ViewableImpression" minOccurs="0" maxOccurs="1" type="AnyURI_type" />
+                              </xs:sequence>
+                              <xs:attribute name="vendor" type="xs:anyURI" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Creatives" minOccurs="1" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Creative" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="UniversalAdId" minOccurs="0" maxOccurs="1" type="UniversalAdId_type" />
+                                <xs:element name="CreativeExtensions" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CreativeExtension" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##any" />
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:choice>
+                                  <xs:element name="Linear" minOccurs="0" maxOccurs="1">
+                                    <xs:complexType>
+                                      <xs:sequence>
+                                        <xs:element name="Duration" minOccurs="1" maxOccurs="1" type="xs:time" />
+                                        <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:element name="Tracking" minOccurs="0" maxOccurs="unbounded" type="TrackingLinear_type" />
+                                            </xs:sequence>
+                                          </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type" />
+                                        <xs:element name="VideoClicks" minOccurs="0" maxOccurs="1">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:element name="ClickThrough" minOccurs="0" maxOccurs="1" type="AnyURI_type" />
+                                              <xs:element name="ClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type" />
+                                              <xs:element name="CustomClick" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type" />
+                                            </xs:sequence>
+                                          </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="MediaFiles" minOccurs="1" maxOccurs="1">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:element name="Mezzanine" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                              <xs:element name="MediaFile" minOccurs="1" maxOccurs="unbounded" type="MediaFile_type" />
+                                              <xs:element name="InteractiveCreativeFile" minOccurs="0" maxOccurs="unbounded" type="InteractiveCreativeFile_type" />
+                                            </xs:sequence>
+                                          </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Icons" minOccurs="0" maxOccurs="1">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:element name="Icon" minOccurs="1" maxOccurs="unbounded">
+                                                <xs:complexType>
+                                                  <xs:sequence>
+                                                    <xs:choice>
+                                                      <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
+                                                      <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                                      <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                                    </xs:choice>
+                                                    <xs:element name="IconClicks" minOccurs="0" maxOccurs="1">
+                                                      <xs:complexType>
+                                                        <xs:sequence>
+                                                          <xs:element name="IconClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                                          <xs:element name="IconClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type" />
+                                                        </xs:sequence>
+                                                      </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="IconViewTracking" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                                                  </xs:sequence>
+                                                  <xs:attribute name="program" type="xs:string" use="required" />
+                                                  <xs:attribute name="width" type="xs:integer" use="required" />
+                                                  <xs:attribute name="height" type="xs:integer" use="required" />
+                                                  <xs:attribute name="xPosition" use="required">
+                                                    <xs:simpleType>
+                                                      <xs:restriction base="xs:string">
+                                                        <xs:pattern value="([0-9]*|left|right)" />
+                                                      </xs:restriction>
+                                                    </xs:simpleType>
+                                                  </xs:attribute>
+                                                  <xs:attribute name="yPosition" use="required">
+                                                    <xs:simpleType>
+                                                      <xs:restriction base="xs:string">
+                                                        <xs:pattern value="([0-9]*|top|bottom)" />
+                                                      </xs:restriction>
+                                                    </xs:simpleType>
+                                                  </xs:attribute>
+                                                  <xs:attribute name="offset" type="xs:time" use="optional" />
+                                                  <xs:attribute name="duration" type="xs:time" use="optional" />
+                                                  <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                                                  <xs:attribute name="pxratio" use="optional">
+                                                    <xs:simpleType>
+                                                      <xs:restriction base="xs:decimal">
+                                                        <xs:fractionDigits value="2" />
+                                                      </xs:restriction>
+                                                    </xs:simpleType>
+                                                  </xs:attribute>
+                                                </xs:complexType>
+                                              </xs:element>
+                                            </xs:sequence>
+                                          </xs:complexType>
+                                        </xs:element>
+                                      </xs:sequence>
+                                      <xs:attribute name="skipoffset" use="optional">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:pattern value="(\d{2}:[0-5]\d:[0-5]\d(\.\d\d\d)?|1?\d?\d(\.?\d)*%)" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:attribute>
+                                    </xs:complexType>
+                                  </xs:element>
+                                  <xs:element name="CompanionAds" minOccurs="0" maxOccurs="1">
+                                    <xs:complexType>
+                                      <xs:sequence>
+                                        <xs:element name="Companion" minOccurs="1" maxOccurs="unbounded">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:choice>
+                                                <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
+                                                <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                                <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                              </xs:choice>
+                                              <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type" />
+                                              <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                              <xs:element name="CompanionClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                              <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type" />
+                                              <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1">
+                                                <xs:complexType>
+                                                  <xs:sequence>
+                                                    <xs:element name="Tracking" minOccurs="0" maxOccurs="unbounded" type="TrackingCompanion_type" />
+                                                  </xs:sequence>
+                                                </xs:complexType>
+                                              </xs:element>
+                                            </xs:sequence>
+                                            <xs:attribute name="id" type="xs:string" use="optional" />
+                                            <xs:attribute name="width" type="xs:integer" use="required" />
+                                            <xs:attribute name="height" type="xs:integer" use="required" />
+                                            <xs:attribute name="assetWidth" type="xs:integer" use="optional" />
+                                            <xs:attribute name="assetHeight" type="xs:integer" use="optional" />
+                                            <xs:attribute name="expandedWidth" type="xs:integer" use="optional" />
+                                            <xs:attribute name="expandedHeight" type="xs:integer" use="optional" />
+                                            <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                                            <xs:attribute name="adSlotId" type="xs:string" use="optional" />
+                                            <xs:attribute name="pxratio" use="optional">
+                                              <xs:simpleType>
+                                                <xs:restriction base="xs:decimal">
+                                                  <xs:fractionDigits value="2" />
+                                                </xs:restriction>
+                                              </xs:simpleType>
+                                            </xs:attribute>
+                                          </xs:complexType>
+                                        </xs:element>
+                                      </xs:sequence>
+                                      <xs:attribute name="required" use="optional">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:NMTOKEN">
+                                            <xs:enumeration value="all" />
+                                            <xs:enumeration value="any" />
+                                            <xs:enumeration value="none" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:attribute>
+                                    </xs:complexType>
+                                  </xs:element>
+                                  <xs:element name="NonLinearAds" minOccurs="0" maxOccurs="1">
+                                    <xs:complexType>
+                                      <xs:sequence>
+                                        <xs:element name="NonLinear" minOccurs="1" maxOccurs="unbounded">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:choice>
+                                                <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
+                                                <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                                <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                              </xs:choice>
+                                              <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type" />
+                                              <xs:element name="NonLinearClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                              <xs:element name="NonLinearClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type" />
+                                            </xs:sequence>
+                                            <xs:attribute name="id" type="xs:string" use="optional" />
+                                            <xs:attribute name="width" type="xs:integer" use="required" />
+                                            <xs:attribute name="height" type="xs:integer" use="required" />
+                                            <xs:attribute name="expandedWidth" type="xs:integer" use="optional" />
+                                            <xs:attribute name="expandedHeight" type="xs:integer" use="optional" />
+                                            <xs:attribute name="scalable" type="xs:boolean" use="optional" />
+                                            <xs:attribute name="maintainAspectRatio" type="xs:boolean" use="optional" />
+                                            <xs:attribute name="minSuggestedDuration" type="xs:time" use="optional" />
+                                            <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                                          </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:element name="Tracking" minOccurs="0" maxOccurs="unbounded" type="TrackingNonLinear_type" />
+                                            </xs:sequence>
+                                          </xs:complexType>
+                                        </xs:element>
+                                      </xs:sequence>
+                                    </xs:complexType>
+                                  </xs:element>
+                                </xs:choice>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:string" use="optional" />
+                              <xs:attribute name="sequence" type="xs:integer" use="optional" />
+                              <xs:attribute name="adId" type="xs:string" use="optional" />
+                              <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Extensions" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Extension" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##any" />
+                              </xs:sequence>
+                              <xs:attribute name="type" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Wrapper" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdSystem" minOccurs="1" maxOccurs="1" type="AdSystem_type" />
+                    <xs:element name="VASTAdTagURI" minOccurs="1" maxOccurs="1" type="xs:anyURI" />
+                    <xs:element name="Pricing" minOccurs="0" maxOccurs="1" type="Pricing_type" />
+                    <xs:element name="Error" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                    <xs:element name="Impression" minOccurs="1" maxOccurs="unbounded" type="AnyURI_type" />
+                    <xs:element name="ViewableImpression" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Viewable" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                          <xs:element name="NotViewable" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                          <xs:element name="ViewUndetermined" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AdVerifications" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Verification" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ViewableImpression" minOccurs="0" maxOccurs="1" type="AnyURI_type" />
+                              </xs:sequence>
+                              <xs:attribute name="vendor" type="xs:anyURI" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Creatives" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Creative" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:choice>
+                                <xs:element name="Linear" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Tracking" minOccurs="0" maxOccurs="unbounded" type="TrackingLinear_type" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="VideoClicks" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="ClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type" />
+                                            <xs:element name="CustomClick" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Icons" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Icon" minOccurs="1" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:choice>
+                                                    <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
+                                                    <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                                    <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                                  </xs:choice>
+                                                  <xs:element name="IconClicks" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="IconClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                                        <xs:element name="IconClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="IconViewTracking" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                                                </xs:sequence>
+                                                <xs:attribute name="program" type="xs:string" use="required" />
+                                                <xs:attribute name="width" type="xs:integer" use="required" />
+                                                <xs:attribute name="height" type="xs:integer" use="required" />
+                                                <xs:attribute name="xPosition" use="required">
+                                                  <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                      <xs:pattern value="([0-9]*|left|right)" />
+                                                    </xs:restriction>
+                                                  </xs:simpleType>
+                                                </xs:attribute>
+                                                <xs:attribute name="yPosition" use="required">
+                                                  <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                      <xs:pattern value="([0-9]*|top|bottom)" />
+                                                    </xs:restriction>
+                                                  </xs:simpleType>
+                                                </xs:attribute>
+                                                <xs:attribute name="offset" type="xs:time" use="optional" />
+                                                <xs:attribute name="duration" type="xs:time" use="optional" />
+                                                <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                                                <xs:attribute name="pxratio" use="optional">
+                                                  <xs:simpleType>
+                                                    <xs:restriction base="xs:decimal">
+                                                      <xs:fractionDigits value="2" />
+                                                    </xs:restriction>
+                                                  </xs:simpleType>
+                                                </xs:attribute>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="CompanionAds" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Companion" minOccurs="1" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:choice>
+                                              <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
+                                              <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                              <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                            </xs:choice>
+                                            <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type" />
+                                            <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                            <xs:element name="CompanionClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
+                                            <xs:element name="CompanionClickTracking" minOccurs="0" maxOccurs="unbounded" type="AnyURI_type" />
+                                            <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Tracking" minOccurs="0" maxOccurs="unbounded" type="TrackingCompanion_type" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="id" type="xs:string" use="optional" />
+                                          <xs:attribute name="width" type="xs:integer" use="required" />
+                                          <xs:attribute name="height" type="xs:integer" use="required" />
+                                          <xs:attribute name="assetWidth" type="xs:integer" use="optional" />
+                                          <xs:attribute name="assetHeight" type="xs:integer" use="optional" />
+                                          <xs:attribute name="expandedWidth" type="xs:integer" use="optional" />
+                                          <xs:attribute name="expandedHeight" type="xs:integer" use="optional" />
+                                          <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                                          <xs:attribute name="adSlotId" type="xs:string" use="optional" />
+                                          <xs:attribute name="pxratio" use="optional">
+                                            <xs:simpleType>
+                                              <xs:restriction base="xs:decimal">
+                                                <xs:fractionDigits value="2" />
+                                              </xs:restriction>
+                                            </xs:simpleType>
+                                          </xs:attribute>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="required" use="optional">
+                                      <xs:simpleType>
+                                        <xs:restriction base="xs:NMTOKEN">
+                                          <xs:enumeration value="all" />
+                                          <xs:enumeration value="any" />
+                                          <xs:enumeration value="none" />
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                    </xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="NonLinearAds" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="NonLinear" minOccurs="1" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="NonLinearClickTracking" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                                          </xs:sequence>
+                                          <xs:attribute name="id" type="xs:string" use="optional" />
+                                          <xs:attribute name="width" type="xs:integer" use="required" />
+                                          <xs:attribute name="height" type="xs:integer" use="required" />
+                                          <xs:attribute name="expandedWidth" type="xs:integer" use="optional" />
+                                          <xs:attribute name="expandedHeight" type="xs:integer" use="optional" />
+                                          <xs:attribute name="scalable" type="xs:boolean" use="optional" />
+                                          <xs:attribute name="maintainAspectRatio" type="xs:boolean" use="optional" />
+                                          <xs:attribute name="minSuggestedDuration" type="xs:time" use="optional" />
+                                          <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="TrackingEvents" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Tracking" minOccurs="0" maxOccurs="unbounded" type="TrackingNonLinear_type" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:choice>
+                              <xs:attribute name="id" type="xs:string" use="optional" />
+                              <xs:attribute name="sequence" type="xs:integer" use="optional" />
+                              <xs:attribute name="adId" type="xs:string" use="optional" />
+                              <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Extensions" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Extension" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##any" />
+                              </xs:sequence>
+                              <xs:attribute name="type" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="followAdditionalWrappers" type="xs:boolean" use="optional" />
+                  <xs:attribute name="allowMultipleAds" type="xs:boolean" use="optional" />
+                  <xs:attribute name="fallbackOnNoAd" type="xs:boolean" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:attribute name="id" type="xs:string" use="optional" />
+            <xs:attribute name="sequence" type="xs:integer" use="optional" />
+            <xs:attribute name="conditionalAd" type="xs:boolean" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Error" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+      </xs:choice>
+      <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="AdParameters_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="xmlEncoded" type="xs:boolean" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AdSystem_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="version" type="xs:string" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AnyURI_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="id" type="xs:string" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Category_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="authority" type="xs:anyURI" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="HTMLResource_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="xmlEncoded" type="xs:boolean" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InteractiveCreativeFile_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="type" type="xs:string" use="optional" />
+        <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MediaFile_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="id" type="xs:string" use="optional" />
+        <xs:attribute name="delivery" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:NMTOKEN">
+              <xs:enumeration value="streaming" />
+              <xs:enumeration value="progressive" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="type" type="xs:string" use="required" />
+        <xs:attribute name="bitrate" type="xs:integer" use="optional" />
+        <xs:attribute name="minBitrate" type="xs:integer" use="optional" />
+        <xs:attribute name="maxBitrate" type="xs:integer" use="optional" />
+        <xs:attribute name="width" type="xs:integer" use="required" />
+        <xs:attribute name="height" type="xs:integer" use="required" />
+        <xs:attribute name="scalable" type="xs:boolean" use="optional" />
+        <xs:attribute name="maintainAspectRatio" type="xs:boolean" use="optional" />
+        <xs:attribute name="codec" use="optional" type="xs:string" />
+        <xs:attribute name="apiFramework" type="xs:string" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Pricing_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="model" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:NMTOKEN">
+              <xs:enumeration value="cpc" />
+              <xs:enumeration value="cpm" />
+              <xs:enumeration value="cpe" />
+              <xs:enumeration value="cpv" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="currency" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[a-zA-Z]{3}" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="StaticResource_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="creativeType" type="xs:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Survey_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="type" type="xs:string" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TrackingCompanion_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="event" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:NMTOKEN">
+              <xs:enumeration value="creativeView" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TrackingLinear_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="event" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:NMTOKEN">
+              <xs:enumeration value="start" />
+              <xs:enumeration value="firstQuartile" />
+              <xs:enumeration value="midpoint" />
+              <xs:enumeration value="thirdQuartile" />
+              <xs:enumeration value="complete" />
+              <xs:enumeration value="mute" />
+              <xs:enumeration value="unmute" />
+              <xs:enumeration value="pause" />
+              <xs:enumeration value="rewind" />
+              <xs:enumeration value="resume" />
+              <xs:enumeration value="skip" />
+              <xs:enumeration value="progress" />
+              <xs:enumeration value="playerExpand" />
+              <xs:enumeration value="playerCollapse" />
+              <xs:enumeration value="acceptInviationLinear" />
+              <xs:enumeration value="timeSpentViewing" />
+              <xs:enumeration value="otherAdInteraction" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="offset" use="optional">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="(\d{2}:[0-5]\d:[0-5]\d(\.\d\d\d)?|1?\d?\d(\.?\d)*%)" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TrackingNonLinear_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="event" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:NMTOKEN">
+              <xs:enumeration value="creativeView" />
+              <xs:enumeration value="mute" />
+              <xs:enumeration value="unmute" />
+              <xs:enumeration value="pause" />
+              <xs:enumeration value="rewind" />
+              <xs:enumeration value="resume" />
+              <xs:enumeration value="close" />
+              <xs:enumeration value="skip" />
+              <xs:enumeration value="progress" />
+              <xs:enumeration value="playerExpand" />
+              <xs:enumeration value="playerCollapse" />
+              <xs:enumeration value="acceptInvitation" />
+              <xs:enumeration value="adExpand" />
+              <xs:enumeration value="adCollapse" />
+              <xs:enumeration value="minimize" />
+              <xs:enumeration value="overlayViewDuration" />
+              <xs:enumeration value="otherAdInteraction" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="offset" use="optional">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="(\d{2}:[0-5]\d:[0-5]\d(\.\d\d\d)?|1?\d?\d(\.?\d)*%)" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UniversalAdId_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="idRegistry" type="xs:string" use="required" />
+        <xs:attribute name="idValue" type="xs:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
