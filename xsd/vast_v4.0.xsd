@@ -547,9 +547,9 @@
             <xs:documentation>URL source for an IFrame to display the companion element</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type">
+        <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="xs:anyURI">
           <xs:annotation>
-            <xs:documentation>HTML to display the companion element</xs:documentation>
+            <xs:documentation>URL source for an HTML resource to display the companion element</xs:documentation>
           </xs:annotation>
         </xs:element>
       </xs:choice>
@@ -648,9 +648,9 @@
             <xs:documentation>URL source for an IFrame to display the companion element</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type">
+        <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="xs:anyURI">
           <xs:annotation>
-            <xs:documentation>HTML to display the companion element</xs:documentation>
+            <xs:documentation>URL source for an HTML resource to display the companion element</xs:documentation>
           </xs:annotation>
         </xs:element>
       </xs:choice>
@@ -774,17 +774,6 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="HTMLResource_type">
-    <xs:simpleContent>
-      <xs:extension base="xs:anyURI">
-        <xs:attribute name="xmlEncoded" type="xs:boolean" use="optional">
-          <xs:annotation>
-            <xs:documentation>Specifies whether the HTML is XML-encoded</xs:documentation>
-          </xs:annotation>
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
   <xs:complexType name="Icons_type">
     <xs:sequence>
       <xs:element name="Icon" minOccurs="1" maxOccurs="unbounded">
@@ -804,9 +793,9 @@
                   <xs:documentation>URL source for an IFrame to display the companion element</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type">
+              <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="xs:anyURI">
                 <xs:annotation>
-                  <xs:documentation>HTML to display the companion element</xs:documentation>
+                  <xs:documentation>URL source for an HTML resource to display the companion element</xs:documentation>
                 </xs:annotation>
               </xs:element>
             </xs:choice>
@@ -1019,9 +1008,9 @@
             <xs:documentation>URL source for an IFrame to display the companion element</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type">
+        <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="xs:anyURI">
           <xs:annotation>
-            <xs:documentation>HTML to display the companion element</xs:documentation>
+            <xs:documentation>URL source for an HTML resource to display the companion element</xs:documentation>
           </xs:annotation>
         </xs:element>
       </xs:choice>

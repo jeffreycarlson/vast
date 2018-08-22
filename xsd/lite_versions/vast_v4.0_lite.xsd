@@ -123,7 +123,7 @@
                                                     <xs:choice>
                                                       <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
                                                       <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
-                                                      <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                                      <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
                                                     </xs:choice>
                                                     <xs:element name="IconClicks" minOccurs="0" maxOccurs="1">
                                                       <xs:complexType>
@@ -186,7 +186,7 @@
                                               <xs:choice>
                                                 <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
                                                 <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
-                                                <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                                <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
                                               </xs:choice>
                                               <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type" />
                                               <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string" />
@@ -239,7 +239,7 @@
                                               <xs:choice>
                                                 <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
                                                 <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
-                                                <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                                <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
                                               </xs:choice>
                                               <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type" />
                                               <xs:element name="NonLinearClickThrough" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
@@ -359,7 +359,7 @@
                                                   <xs:choice>
                                                     <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
                                                     <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
-                                                    <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                                    <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
                                                   </xs:choice>
                                                   <xs:element name="IconClicks" minOccurs="0" maxOccurs="1">
                                                     <xs:complexType>
@@ -415,7 +415,7 @@
                                             <xs:choice>
                                               <xs:element name="StaticResource" minOccurs="0" maxOccurs="1" type="StaticResource_type" />
                                               <xs:element name="IFrameResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
-                                              <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="HTMLResource_type" />
+                                              <xs:element name="HTMLResource" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
                                             </xs:choice>
                                             <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type" />
                                             <xs:element name="AltText" minOccurs="0" maxOccurs="1" type="xs:string" />
@@ -554,13 +554,6 @@
     <xs:simpleContent>
       <xs:extension base="xs:string">
         <xs:attribute name="authority" type="xs:anyURI" use="optional" />
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="HTMLResource_type">
-    <xs:simpleContent>
-      <xs:extension base="xs:anyURI">
-        <xs:attribute name="xmlEncoded" type="xs:boolean" use="optional" />
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
