@@ -79,7 +79,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         </tr>
         <tr>
             <td></td>
-            <td>conditionalAd</td>
+            <td><span class="pl-md">conditionalAd</span></td>
             <td>-</td>
             <td>-</td>
             <td>4.0</td>
@@ -664,8 +664,8 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>delivery</td>
-            <td>-</td>
-            <td>-</td>
+            <td>2.0</td>
+            <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
         </tr>
