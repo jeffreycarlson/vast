@@ -20,295 +20,2294 @@ A list of tools to help construct and debug VAST creative, specificially for mob
 
 ## VAST Elements and Attributes
 
-| Elements | Attributes |     |     |     |     | 
-| ---      | ---        | --- | --- | --- | --- |
-| VAST |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | version | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Error |  | - | 3.0 | 4.0 | 4.1 | 
-| VAST/Ad |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | sequence | - | 3.0 | 4.0 | 4.1 | 
-|  | conditionalAd | - | - | 4.0 | 4.1 | 
-|  | adType | - | - | - | 4.1 | 
-| VAST/Ad/InLine |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/AdSystem |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | version | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/AdTitle |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Impression |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/AdServingId |  | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Category |  | - | - | 4.0 | 4.1 | 
-|  | authority | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Description |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Advertiser |  | - | 3.0 | 4.0 | 4.1 | 
-|  | id | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Pricing |  | - | 3.0 | 4.0 | 4.1 | 
-|  | model | - | 3.0 | 4.0 | 4.1 | 
-|  | currency | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Survey |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | type | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Error |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Expires |  | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/ViewableImpression |  | - | - | 4.0 | 4.1 | 
-|  | id | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Viewable |  | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NotViewable |  | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewUndetermined |  | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/AdVerifications |  | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Verification |  | - | - | 4.0 | 4.1 | 
-|  | vendor | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/JavaScriptResource |  | - | - | 4.0 | 4.1 | 
-|  | apiFramework | - | - | 4.0 | 4.1 | 
-|  | browserOptional | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/FlashResource |  | - | - | 4.0 | 4.1 | 
-|  | apiFramework | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ExecutableResource |  | - | - | - | 4.1 | 
-|  | apiFramework | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents |  | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking |  | - | - | - | 4.1 | 
-|  | event | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewableImpression |  | - | - | 4.0 | - | 
-|  | id | - | - | 4.0 | - | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VerificationParameters |  | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Extensions |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Extension |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | type | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Creatives |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Creative |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | sequence | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | adId | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | apiFramework | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/UniversalAdId |  | - | - | 4.0 | 4.1 | 
-|  | idRegistry | - | - | 4.0 | 4.1 | 
-|  | idValue | - | - | 4.0 | - | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CreativeExtensions |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CreativeExtension |  | - | 3.0 | 4.0 | 4.1 | 
-|  | type | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Linear |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | skipoffset | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Duration |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters |  | - | 3.0 | 4.0 | 4.1 | 
-|  | xmlEncoded | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/MediaFiles |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Mezzanine |  | - | - | 4.0 | 4.1 | 
-|  | delivery | - | - | - | 4.1 | 
-|  | type | - | - | - | 4.1 | 
-|  | width | - | - | - | 4.1 | 
-|  | height | - | - | - | 4.1 | 
-|  | codec | - | - | - | 4.1 | 
-|  | id | - | - | - | 4.1 | 
-|  | fileSize | - | - | - | 4.1 | 
-|  | mediaType | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/MediaFile |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | delivery | - | - | 4.0 | 4.1 | 
-|  | type | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | bitrate | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | minBitrate | - | 3.0 | 4.0 | 4.1 | 
-|  | maxBitrate | - | 3.0 | 4.0 | 4.1 | 
-|  | width | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | height | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | scalable | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | maintainAspectRatio | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | codec | - | 3.0 | 4.0 | 4.1 | 
-|  | apiFramework | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | fileSize | - | - | - | 4.1 | 
-|  | mediaType | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/InteractiveCreativeFile |  | - | - | 4.0 | 4.1 | 
-|  | apiFramework | - | - | 4.0 | 4.1 | 
-|  | variableDuration | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClosedCaptionFiles |  | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClosedCaptionFile |  | - | - | - | 4.1 | 
-|  | type | - | - | - | 4.1 | 
-|  | language | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VideoClicks |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClickThrough |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClickTracking |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CustomClick |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | event | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | offset | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Icons |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Icon |  | - | 3.0 | 4.0 | 4.1 | 
-|  | program | - | 3.0 | 4.0 | 4.1 | 
-|  | width | - | 3.0 | 4.0 | 4.1 | 
-|  | height | - | 3.0 | 4.0 | 4.1 | 
-|  | xPosition | - | 3.0 | 4.0 | 4.1 | 
-|  | yPosition | - | 3.0 | 4.0 | 4.1 | 
-|  | duration | - | 3.0 | 4.0 | 4.1 | 
-|  | offset | - | 3.0 | 4.0 | 4.1 | 
-|  | apiFramework | - | 3.0 | 4.0 | 4.1 | 
-|  | pxratio | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/StaticResource |  | - | 3.0 | 4.0 | 4.1 | 
-|  | creativeType | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IFrameResource |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/HTMLResource |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClicks |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClickThrough |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClickTracking |  | - | 3.0 | 4.0 | 4.1 | 
-|  | id | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconViewTracking |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearAds |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinear |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id | 2.0 | 3.0 | - | - | 
-|  | width | 2.0 | 3.0 | - | - | 
-|  | height | 2.0 | 3.0 | - | - | 
-|  | expandedWidth | 2.0 | 3.0 | - | - | 
-|  | expandedHeight | 2.0 | 3.0 | - | - | 
-|  | scalable | 2.0 | 3.0 | - | - | 
-|  | maintainAspectRatio | 2.0 | 3.0 | - | - | 
-|  | minSuggestedDuration | 2.0 | 3.0 | - | - | 
-|  | apiFramework | 2.0 | 3.0 | - | - | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickThrough |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickTracking |  | - | 3.0 | 4.0 | 4.1 | 
-|  | id | - | 3.0 | - | - | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | event | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters |  | 2.0 | ?? | ?? | ?? | 
-|  | xmlEncoded | - | ?? | ?? | ?? | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionAds |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | required | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Companion |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | width | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | height | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | assetWidth | - | 3.0 | 4.0 | 4.1 | 
-|  | assetHeight | - | 3.0 | 4.0 | 4.1 | 
-|  | expandedWidth | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | expandedHeight | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | apiFramework | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | adSlotID | - | 3.0 | 4.0 | 4.1 | 
-|  | pxratio | - | - | 4.0 | 4.1 | 
-|  | renderingMode | - | - | - | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/StaticResource |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | creativeType | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IFrameResource |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/HTMLResource |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | xmlEncoded | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AltText |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickThrough |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickTracking |  | - | 3.0 | 4.0 | 4.1 | 
-|  | id | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | event | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  |  |  |  |  |  | 
-|  |  |  |  |  |  | 
-|  |  |  |  |  |  | 
-|  |  |  |  |  |  | 
-| Elements | Attributes | Version Support |  |  |  | 
-| VAST/Ad/Wrapper |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | followAdditionalWrappers | - | - | 4.0 | 4.1 | 
-|  | allowMultipleAds | - | - | 4.0 | 4.1 | 
-|  | fallbackOnNoAd | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Impression |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/VASTAdTagURI |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/AdSystem |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | version | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Pricing |  | - | - | 4.0 | 4.1 | 
-|  | model | - | - | 4.0 | 4.1 | 
-|  | currency | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Error |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/ViewableImpression |  | - | - | 4.0 | 4.1 | 
-|  | id | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Viewable |  | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NotViewable |  | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewUndetermined |  | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/AdVerifications |  | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Verification |  | - | - | 4.0 | 4.1 | 
-|  | vendor | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewableImpression |  | - | - | 4.0 | - | 
-|  | id | - | - | 4.0 | - | 
-| &nbsp;&nbsp;&nbsp;/Extensions |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Extension |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;/Creatives |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Creative |  | 2.0 | 3.0 | 4.0 | 4.1 | 
-|  | id |  | 3.0 | 4.0 | 4.1 | 
-|  | sequence |  | 3.0 | 4.0 | 4.1 | 
-|  | adId | 2.0 | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Linear |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking |  |  | 3.0 | 4.0 | 4.1 | 
-|  | event |  | 3.0 | 4.0 | 4.1 | 
-|  | offset |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VideoClicks |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClickTracking |  |  | 3.0 | 4.0 | 4.1 | 
-|  | id |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CustomClick |  |  | 3.0 | 4.0 | 4.1 | 
-|  | id |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Icons |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Icon |  | - | 3.0 | 4.0 | 4.1 | 
-|  | program | - | 3.0 | 4.0 | 4.1 | 
-|  | width | - | 3.0 | 4.0 | 4.1 | 
-|  | height | - | 3.0 | 4.0 | 4.1 | 
-|  | xPosition | - | 3.0 | 4.0 | 4.1 | 
-|  | yPosition | - | 3.0 | 4.0 | 4.1 | 
-|  | duration | - | 3.0 | 4.0 | 4.1 | 
-|  | offset | - | 3.0 | 4.0 | 4.1 | 
-|  | apiFramework | - | 3.0 | 4.0 | 4.1 | 
-|  | pxratio | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/StaticResource |  | - | 3.0 | 4.0 | 4.1 | 
-|  | creativeType | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IFrameResource |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/HTMLResource |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClicks |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClickThrough |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClickTracking |  | - | 3.0 | 4.0 | 4.1 | 
-|  | id | - | - | - | - | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconViewTracking |  | - | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/InteractiveCreativeFile |  | - | - | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearAds |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinear |  |  | 3.0 | 4.0 | 4.1 | 
-|  | id |  | 3.0 | - | - | 
-|  | width |  | 3.0 | - | - | 
-|  | height |  | 3.0 | - | - | 
-|  | expandedWidth |  | 3.0 | - | - | 
-|  | expandedHeight |  | 3.0 | - | - | 
-|  | scalable |  | 3.0 | - | - | 
-|  | maintainAspectRatio |  | 3.0 | - | - | 
-|  | minSuggestedDuration |  | 3.0 | - | - | 
-|  | apiFramework |  | 3.0 | - | - | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickThrough |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickTracking |  |  | 3.0 | 4.0 | 4.1 | 
-|  | id | - | - | - | - | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking |  |  | 3.0 | 4.0 | 4.1 | 
-|  | event |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionAds |  |  | 3.0 | 4.0 | 4.1 | 
-|  | required |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Companion |  |  | 3.0 | 4.0 | 4.1 | 
-|  | id |  | 3.0 | 4.0 | 4.1 | 
-|  | width |  | 3.0 | 4.0 | 4.1 | 
-|  | height |  | 3.0 | 4.0 | 4.1 | 
-|  | assetWidth |  | 3.0 | 4.0 | 4.1 | 
-|  | assetHeight |  | 3.0 | 4.0 | 4.1 | 
-|  | expandedWidth |  | 3.0 | 4.0 | 4.1 | 
-|  | expandedHeight |  | 3.0 | 4.0 | 4.1 | 
-|  | apiFramework |  | 3.0 | 4.0 | 4.1 | 
-|  | adSlotID |  | 3.0 | 4.0 | 4.1 | 
-|  | pxratio |  | - | 4.0 | 4.1 | 
-|  | logoTile | - | - | - | - | 
-|  | logoTitle | - | - | - | - | 
-|  | logoArtist | - | - | - | - | 
-|  | logoURL | - | - | - | - | 
-|  | renderingMode | - | - | - | - | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/StaticResource |  |  | 3.0 | 4.0 | 4.1 | 
-|  | creativeType |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IFrameResource |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/HTMLResource |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters |  |  | 3.0 | 4.0 | 4.1 | 
-|  | xmlEncoded |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AltText |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickThrough |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickTracking |  |  | 3.0 | 4.0 | 4.1 | 
-|  | id |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents |  |  | 3.0 | 4.0 | 4.1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking |  |  | 3.0 | 4.0 | 4.1 | 
-|  | event |  | 3.0 | 4.0 | 4.1 | 
+<table>
+    <thead>
+        <tr>
+            <th>Elements</th>
+            <th>Attributes</th>
+            <th colspan="4">Version Support</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="background-color: #f6f8fa;font-weight: obliquez;">
+            <td>VAST</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>version</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Error</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>VAST/Ad</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>sequence</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>conditionalAd</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>adType</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>VAST/Ad/InLine</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/AdSystem</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>version</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/AdTitle</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Impression</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/AdServingId</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Category</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>authority</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Description</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Advertiser</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Pricing</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>model</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>currency</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Survey</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>type</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Error</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Expires</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;/ViewableImpression</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Viewable</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NotViewable</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewUndetermined</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;/AdVerifications</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Verification</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>vendor</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/JavaScriptResource</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>browserOptional</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/FlashResource</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ExecutableResource</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>event</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewableImpression</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VerificationParameters</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;/Extensions</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Extension</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>type</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;/Creatives</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Creative</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>sequence</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>adId</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/UniversalAdId</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>idRegistry</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>idValue</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CreativeExtensions</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CreativeExtension</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>type</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Linear</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>skipoffset</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Duration</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>xmlEncoded</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/MediaFiles</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Mezzanine</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>delivery</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>type</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>width</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>height</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>codec</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>fileSize</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>mediaType</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/MediaFile</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>delivery</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>type</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>bitrate</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>minBitrate</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>maxBitrate</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>width</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>height</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>scalable</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>maintainAspectRatio</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>codec</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>fileSize</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>mediaType</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/InteractiveCreativeFile</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>variableDuration</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClosedCaptionFiles</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClosedCaptionFile</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>type</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>language</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VideoClicks</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClickThrough</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClickTracking</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CustomClick</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>event</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>offset</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Icons</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Icon</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>program</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>width</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>height</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>xPosition</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>yPosition</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>duration</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>offset</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>pxratio</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/StaticResource</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>creativeType</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IFrameResource</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/HTMLResource</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClicks</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClickThrough</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClickTracking</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconViewTracking</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearAds</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinear</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>width</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>height</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>expandedWidth</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>expandedHeight</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>scalable</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>maintainAspectRatio</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>minSuggestedDuration</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickThrough</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickTracking</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>event</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters</td>
+            <td></td>
+            <td>2.0</td>
+            <td>??</td>
+            <td>??</td>
+            <td>??</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>xmlEncoded</td>
+            <td>-</td>
+            <td>??</td>
+            <td>??</td>
+            <td>??</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionAds</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>required</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Companion</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>width</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>height</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>assetWidth</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>assetHeight</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>expandedWidth</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>expandedHeight</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>adSlotID</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>pxratio</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>renderingMode</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/StaticResource</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>creativeType</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IFrameResource</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/HTMLResource</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>xmlEncoded</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AltText</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickThrough</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickTracking</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>event</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>VAST/Ad/Wrapper</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>followAdditionalWrappers</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>allowMultipleAds</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>fallbackOnNoAd</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Impression</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/VASTAdTagURI</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/AdSystem</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>version</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Pricing</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>model</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>currency</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;/Error</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;/ViewableImpression</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Viewable</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NotViewable</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewUndetermined</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;/AdVerifications</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Verification</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>vendor</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewableImpression</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>-</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;/Extensions</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Extension</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;/Creatives</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Creative</td>
+            <td></td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>sequence</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>adId</td>
+            <td>2.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Linear</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>event</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>offset</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VideoClicks</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClickTracking</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CustomClick</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Icons</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Icon</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>program</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>width</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>height</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>xPosition</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>yPosition</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>duration</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>offset</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>pxratio</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/StaticResource</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>creativeType</td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IFrameResource</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/HTMLResource</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClicks</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClickThrough</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconClickTracking</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconViewTracking</td>
+            <td></td>
+            <td>-</td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/InteractiveCreativeFile</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearAds</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinear</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td></td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>width</td>
+            <td></td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>height</td>
+            <td></td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>expandedWidth</td>
+            <td></td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>expandedHeight</td>
+            <td></td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>scalable</td>
+            <td></td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>maintainAspectRatio</td>
+            <td></td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>minSuggestedDuration</td>
+            <td></td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td></td>
+            <td>3.0</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickThrough</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickTracking</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>event</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr style="background-color: #f6f8fa;">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionAds</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>required</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Companion</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>width</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>height</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>assetWidth</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>assetHeight</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>expandedWidth</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>expandedHeight</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>adSlotID</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>pxratio</td>
+            <td></td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>logoTile</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>logoTitle</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>logoArtist</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>logoURL</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>renderingMode</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/StaticResource</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>creativeType</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IFrameResource</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/HTMLResource</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>xmlEncoded</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AltText</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickThrough</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickTracking</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>id</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
+            <td></td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>event</td>
+            <td></td>
+            <td>3.0</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+    </tbody>
+</table>
