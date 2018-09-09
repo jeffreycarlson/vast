@@ -29,7 +29,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         </tr>
     </thead>
     <tbody>
-        <tr style="background-color: #f6f8fa;font-weight: obliquez;">
+        <tr>
             <td>VAST</td>
             <td></td>
             <td>2.0</td>
@@ -53,7 +53,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>VAST/Ad</td>
             <td></td>
             <td>2.0</td>
@@ -79,11 +79,11 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         </tr>
         <tr>
             <td></td>
-            <td><span class="pl-md">conditionalAd</span></td>
+            <td>conditionalAd</td>
             <td>-</td>
             <td>-</td>
             <td>4.0</td>
-            <td>4.1</td>
+            <td>*</td>
         </tr>
         <tr>
             <td></td>
@@ -93,7 +93,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>-</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>VAST/Ad/InLine</td>
             <td></td>
             <td>2.0</td>
@@ -237,7 +237,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>-</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;/ViewableImpression</td>
             <td></td>
             <td>-</td>
@@ -277,7 +277,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;/AdVerifications</td>
             <td></td>
             <td>-</td>
@@ -405,7 +405,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>-</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;/Extensions</td>
             <td></td>
             <td>2.0</td>
@@ -429,7 +429,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;/Creatives</td>
             <td></td>
             <td>2.0</td>
@@ -1069,7 +1069,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearAds</td>
             <td></td>
             <td>2.0</td>
@@ -1221,7 +1221,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>??</td>
             <td>??</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionAds</td>
             <td></td>
             <td>2.0</td>
@@ -1437,7 +1437,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>VAST/Ad/Wrapper</td>
             <td></td>
             <td>2.0</td>
@@ -1541,7 +1541,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;/ViewableImpression</td>
             <td></td>
             <td>-</td>
@@ -1581,7 +1581,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;/AdVerifications</td>
             <td></td>
             <td>-</td>
@@ -1621,7 +1621,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>-</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;/Extensions</td>
             <td></td>
             <td>2.0</td>
@@ -1637,7 +1637,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;/Creatives</td>
             <td></td>
             <td>2.0</td>
@@ -1925,7 +1925,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearAds</td>
             <td></td>
             <td></td>
@@ -2061,7 +2061,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.0</td>
             <td>4.1</td>
         </tr>
-        <tr style="background-color: #f6f8fa;">
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionAds</td>
             <td></td>
             <td></td>
