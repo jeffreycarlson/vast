@@ -83,7 +83,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>-</td>
             <td>-</td>
             <td>4.0</td>
-            <td>*</td>
+            <td>-</td>
         </tr>
         <tr>
             <td></td>
@@ -840,7 +840,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>id</td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -856,7 +856,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>id</td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -872,7 +872,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>id</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1090,72 +1090,72 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>id</td>
             <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>width</td>
             <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>height</td>
             <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>expandedWidth</td>
             <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>expandedHeight</td>
             <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>scalable</td>
             <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>maintainAspectRatio</td>
             <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>minSuggestedDuration</td>
             <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>apiFramework</td>
             <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickThrough</td>
@@ -1209,17 +1209,17 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters</td>
             <td></td>
             <td>2.0</td>
-            <td>??</td>
-            <td>??</td>
-            <td>??</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
             <td></td>
             <td>xmlEncoded</td>
             <td>-</td>
-            <td>??</td>
-            <td>??</td>
-            <td>??</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionAds</td>
@@ -1680,7 +1680,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Linear</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1688,7 +1688,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1696,7 +1696,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1704,7 +1704,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>event</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1712,7 +1712,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>offset</td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1720,7 +1720,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VideoClicks</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1728,7 +1728,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ClickTracking</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1736,7 +1736,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>id</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1744,7 +1744,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CustomClick</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1752,7 +1752,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>id</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1902,14 +1902,6 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.1</td>
         </tr>
         <tr>
-            <td></td>
-            <td>id</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconViewTracking</td>
             <td></td>
             <td>-</td>
@@ -1928,7 +1920,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearAds</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1936,7 +1928,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinear</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -1944,79 +1936,79 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>id</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>width</td>
             <td></td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>height</td>
             <td></td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>expandedWidth</td>
             <td></td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>expandedHeight</td>
             <td></td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>scalable</td>
             <td></td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>maintainAspectRatio</td>
             <td></td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>minSuggestedDuration</td>
             <td></td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td></td>
             <td>apiFramework</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
-            <td>-</td>
-            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickThrough</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2024,7 +2016,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/NonLinearClickTracking</td>
             <td></td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2040,7 +2032,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2048,7 +2040,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2056,7 +2048,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>event</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2064,7 +2056,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionAds</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2072,7 +2064,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>required</td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2080,7 +2072,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Companion</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2088,7 +2080,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>id</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2096,7 +2088,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>width</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2104,7 +2096,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>height</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2112,7 +2104,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>assetWidth</td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2120,7 +2112,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>assetHeight</td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2128,7 +2120,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>expandedWidth</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2136,7 +2128,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>expandedHeight</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2144,7 +2136,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>apiFramework</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2152,7 +2144,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>adSlotID</td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2160,42 +2152,10 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>pxratio</td>
-            <td></td>
+            <td>-</td>
             <td>-</td>
             <td>4.0</td>
             <td>4.1</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>logoTile</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>logoTitle</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>logoArtist</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>logoURL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
         </tr>
         <tr>
             <td></td>
@@ -2203,12 +2163,12 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td>-</td>
+            <td>4.1</td>
         </tr>
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/StaticResource</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2216,7 +2176,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>creativeType</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2224,7 +2184,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IFrameResource</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2232,7 +2192,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/HTMLResource</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2240,7 +2200,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2248,7 +2208,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>xmlEncoded</td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2256,7 +2216,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AltText</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2264,7 +2224,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickThrough</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2272,7 +2232,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CompanionClickTracking</td>
             <td></td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2280,7 +2240,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>id</td>
-            <td></td>
+            <td>-</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2288,7 +2248,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2296,7 +2256,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
             <td></td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
@@ -2304,7 +2264,7 @@ A list of tools to help construct and debug VAST creative, specificially for mob
         <tr>
             <td></td>
             <td>event</td>
-            <td></td>
+            <td>2.0</td>
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
