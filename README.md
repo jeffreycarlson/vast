@@ -1606,6 +1606,94 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.1</td>
         </tr>
         <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/JavaScriptResource</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>browserOptional</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ExecutableResource</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>language</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Tracking</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>event</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VerificationParameters</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BlockedAdCategories</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewableImpression</td>
             <td></td>
             <td>-</td>
@@ -1902,6 +1990,14 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>4.1</td>
         </tr>
         <tr>
+            <td></td>
+            <td>id</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IconViewTracking</td>
             <td></td>
             <td>-</td>
@@ -1915,6 +2011,30 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>-</td>
             <td>-</td>
             <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>type</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>apiFramework</td>
+            <td>-</td>
+            <td>-</td>
+            <td>4.0</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>variableDuration</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
             <td>4.1</td>
         </tr>
         <tr>
@@ -2020,14 +2140,6 @@ A list of tools to help construct and debug VAST creative, specificially for mob
             <td>3.0</td>
             <td>4.0</td>
             <td>4.1</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>id</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
         </tr>
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TrackingEvents</td>
