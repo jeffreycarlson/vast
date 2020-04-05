@@ -7,6 +7,8 @@ Organized by Feature and Version Support
 * [VAST Macros](#vast-macros)
 * [VAST Tracking Events](#vast-tracking-events)
 
+Note: Deprecated and deleted VAST features are provided but are shown using ~~strikethrough~~ 
+
 ## VAST Inline
 
 <table>
@@ -62,10 +64,10 @@ Organized by Feature and Version Support
 </tr>
 <tr>
 <td></td>
-<td>conditionalAd</td>
+<td><del>conditionalAd</del></td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td></td>
@@ -278,18 +280,18 @@ Organized by Feature and Version Support
 <td align="center">4.x</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/FlashResource</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>/FlashResource</del></td>
 <td></td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td></td>
-<td>apiFramework</td>
+<td><del>apiFramework</del></td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ExecutableResource</td>
@@ -334,18 +336,18 @@ Organized by Feature and Version Support
 <td align="center">4.x</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewableImpression</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>/ViewableImpression</del></td>
 <td></td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td></td>
-<td>id</td>
+<td><del>id</del></td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VerificationParameters</td>
@@ -433,10 +435,10 @@ Organized by Feature and Version Support
 </tr>
 <tr>
 <td></td>
-<td>idValue</td>
+<td><del>idValue</del></td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/CreativeExtensions</td>
@@ -650,10 +652,10 @@ Organized by Feature and Version Support
 </tr>
 <tr>
 <td></td>
-<td>apiFramework</td>
-<td align="center">2.0</td>
-<td align="center">3.0</td>
-<td align="center">4.x</td>
+<td><del>apiFramework</del></td>
+<td align="center"><del>2.0</del></td>
+<td align="center"><del>3.0</del></td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td></td>
