@@ -1,9 +1,11 @@
+## VAST Inline
+
 <table>
 <thead>
 <tr>
-<th align="left">Elements</th>
-<th align="left">Attributes</th>
-<th colspan="3">Version Support</th>
+<th align="left" width="310px">Elements</th>
+<th align="left" width="220px">Attributes</th>
+<th colspan="3" width="150px">Version Support</th>
 </tr>
 </thead>
 <tbody>
@@ -1281,39 +1283,20 @@
 <td align="center">3.0</td>
 <td align="center">4.x</td>
 </tr>
+</tbody>
+</table>
+
+## VAST Wrapper
+
+<table>
+<thead>
 <tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<th align="left" width="310px">Elements</th>
+<th align="left" width="220px">Attributes</th>
+<th colspan="3" width="150px">Version Support</th>
 </tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<th>Elements</th>
-<td>Attributes</td>
-<td colspan="3">Version Support</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>VAST/Ad/Wrapper</td>
 <td></td>
@@ -2189,57 +2172,24 @@
 <td align="center">3.0</td>
 <td align="center">4.x</td>
 </tr>
+</tbody>
+</table>
+
+## VAST Error Codes
+
+<table>
+<thead>
 <tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<th align="left" width="310px">VAST Error Codes</th>
+<th align="left" width="220px">-</th>
+<th colspan="3" width="150px">Version Support</th>
 </tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td>VAST Error Codes</td>
-<td>-</td>
-<td colspan="3">Version Support</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>100</td>
 <td></td>
-<td align="center">-</td>
+<td align="center" width="50px">-</td>
 <td align="center">3.0</td>
 <td align="center">4.x</td>
 </tr>
@@ -2502,36 +2452,24 @@
 <td align="center">-</td>
 <td align="center">4.x</td>
 </tr>
+</tbody>
+</table>
+
+## VAST Macros
+
+<table>
+<thead>
 <tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<th align="left" width="310px">VAST Macros</th>
+<th align="left" width="220px">Macro Type</th>
+<th colspan="3" width="150px">Version Support</th>
 </tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td>VAST Macros</td>
-<td>Macro Type</td>
-<td colspan="3">Version Support</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>[TIMESTAMP]</td>
 <td>Generic Macros</td>
-<td align="center">-</td>
+<td align="center" width="50px">-</td>
 <td align="center">-</td>
 <td align="center">4.x</td>
 </tr>
@@ -2885,32 +2823,20 @@
 <td align="center">-</td>
 <td align="center">4.x</td>
 </tr>
+</tbody>
+</table>
+
+## VAST Tracking Events
+
+<table>
+<thead>
 <tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<th align="left" width="310px">VAST Tracking Events</th>
+<th align="left" width="220px">Metric Type</th>
+<th colspan="3" width="150px">Version Support</th>
 </tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td>VAST Tracking Events</td>
-<td>Metric Type</td>
-<td colspan="3">Version Support</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>mute</td>
 <td>Player Operation</td>
@@ -3113,55 +3039,6 @@
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">4.x</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td>acceptInvitationLinear</td>
-<td></td>
-<td align="center">-</td>
-<td align="center">3.0</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td>expand</td>
-<td>Player Operation</td>
-<td align="center">2.0</td>
-<td align="center">3.0</td>
-<td align="center">-</td>
-</tr>
-<tr>
-<td>collapse</td>
-<td>Player Operation</td>
-<td align="center">2.0</td>
-<td align="center">3.0</td>
-<td align="center">-</td>
-</tr>
-<tr>
-<td>fullscreen</td>
-<td></td>
-<td align="center">2.0</td>
-<td align="center">3.0</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td>exitFullscreen</td>
-<td></td>
-<td align="center">-</td>
-<td align="center">3.0</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td>timeSpentViewing</td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table>
