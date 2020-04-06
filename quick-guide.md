@@ -2492,11 +2492,11 @@ Note: Deprecated and deleted VAST features are provided but are shown using ~~st
 <td align="center">4.x</td>
 </tr>
 <tr>
-<td>[CONTENTPLAYHEAD]</td>
-<td>Ad Break Info</td>
+<td><del>[CONTENTPLAYHEAD]</del></td>
+<td><del>Ad Break Info</del></td>
 <td align="center">-</td>
-<td align="center">3.0</td>
-<td align="center">-</td>
+<td align="center"><del>3.0</del></td>
+<td align="center"><del>4.x<del></td>
 </tr>
 <tr>
 <td>[MEDIAPLAYHEAD]</td>
@@ -3050,6 +3050,48 @@ Note: Deprecated and deleted VAST features are provided but are shown using ~~st
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">4.x</td>
+</tr>
+<tr>
+<td><del>acceptInvitationLinear</del></td>
+<td><del>Removed</del></td>
+<td align="center">-</td>
+<td align="center"><del>3.0</del></td>
+<td align="center"><del>4.x</del></td>
+</tr>
+<tr>
+<td><del>expand</del></td>
+<td><del>Removed</del></td>
+<td align="center"><del>2.0</del></td>
+<td align="center"><del>3.0</del></td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td><del>collapse</del></td>
+<td><del>Removed</del></td>
+<td align="center"><del>2.0</del></td>
+<td align="center"><del>3.0</del></td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td><del>fullscreen</del></td>
+<td><del>Removed</del></td>
+<td align="center"><del>2.0</del></td>
+<td align="center"><del>3.0</del></td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td><del>exitFullscreen</del></td>
+<td><del>Removed</del></td>
+<td align="center">-</td>
+<td align="center"><del>3.0</del></td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td><del>timeSpentViewing</del></td>
+<td><del>Removed</del></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 </tbody>
 </table>
