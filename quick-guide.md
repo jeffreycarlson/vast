@@ -1092,16 +1092,16 @@ Note: Deprecated and deleted VAST features are provided but are shown using ~~st
 <td align="center">4.x</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/AdParameters</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>/AdParameters</del></td>
 <td></td>
-<td align="center">2.0</td>
+<td align="center"><del>2.0</del></td>
 <td align="center">-</td>
 <td align="center">-</td>
 </tr>
 <tr>
 <td></td>
-<td>xmlEncoded</td>
-<td align="center">-</td>
+<td><del>xmlEncoded</del></td>
+<td align="center"><del>2.0</del></td>
 <td align="center">-</td>
 <td align="center">-</td>
 </tr>
@@ -1533,18 +1533,18 @@ Note: Deprecated and deleted VAST features are provided but are shown using ~~st
 <td align="center">4.x</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ViewableImpression</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>/ViewableImpression</del></td>
 <td></td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td></td>
-<td>id</td>
+<td><del>id</del></td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;/Extensions</td>
@@ -2352,11 +2352,11 @@ Note: Deprecated and deleted VAST features are provided but are shown using ~~st
 <td align="center">4.x</td>
 </tr>
 <tr>
-<td>408</td>
+<td><del>408</del></td>
 <td></td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">4.x</td>
+<td align="center"><del>4.x</del></td>
 </tr>
 <tr>
 <td>409</td>
