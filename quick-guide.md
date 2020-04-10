@@ -1,6 +1,6 @@
 # VAST Versions Quick Guide
 
-This guide is a quick reference tool for those looking to upgrade to the newest version of VAST or looking to add additional feature support to existing implementations. Deprecated or deleted VAST features are shown using ~~strikethrough~~.
+This guide is a quick reference tool for those looking to upgrade to the latest version of VAST or looking to add additional feature support to existing implementations. Deprecated or deleted VAST features are shown using ~~strikethrough~~.
 
 ## VAST Versions
 * VAST 2.0
