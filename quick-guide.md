@@ -2896,20 +2896,6 @@ This guide is a quick reference tool for those looking to upgrade to the latest 
       <td align="center">4.x</td>
     </tr>
     <tr>
-      <td>playerExpand</td>
-      <td>Player Operation</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">4.x</td>
-    </tr>
-    <tr>
-      <td>playerCollapse</td>
-      <td>Player Operation</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">4.x</td>
-    </tr>
-    <tr>
       <td><del>fullscreen</del></td>
       <td><del>Player Operation</del></td>
       <td align="center"><del>2.0</del></td>
@@ -2922,6 +2908,20 @@ This guide is a quick reference tool for those looking to upgrade to the latest 
       <td align="center">-</td>
       <td align="center"><del>3.0</del></td>
       <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>playerExpand</td>
+      <td>Player Operation</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">4.x</td>
+    </tr>
+    <tr>
+      <td>playerCollapse</td>
+      <td>Player Operation</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">4.x</td>
     </tr>
     <tr>
       <td>notUsed</td>
@@ -3022,20 +3022,6 @@ This guide is a quick reference tool for those looking to upgrade to the latest 
       <td align="center">4.x</td>
     </tr>
     <tr>
-      <td>adExpand</td>
-      <td>NonLinear Ad</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">4.x</td>
-    </tr>
-    <tr>
-      <td>adCollapse</td>
-      <td>NonLinear Ad</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">4.x</td>
-    </tr>
-    <tr>
       <td><del>expand</del></td>
       <td><del>NonLinear Ad</del></td>
       <td align="center"><del>2.0</del></td>
@@ -3048,6 +3034,20 @@ This guide is a quick reference tool for those looking to upgrade to the latest 
       <td align="center"><del>2.0</del></td>
       <td align="center"><del>3.0</del></td>
       <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>adExpand</td>
+      <td>NonLinear Ad</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">4.x</td>
+    </tr>
+    <tr>
+      <td>adCollapse</td>
+      <td>NonLinear Ad</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">4.x</td>
     </tr>
     <tr>
       <td>minimize</td>
